@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Lecture/LectureHub.unity
+    guid: accb8ac48cc5ff14890f185a09c4bc28
+  - enabled: 1
+    path: Assets/00_Scenes/00_SkillMap.unity
+    guid: e0c16760eb84b9e4aa7625ae444b275a
+  - enabled: 1
+    path: Assets/00_Scenes/0301_UIRouter.unity
+    guid: 2784ace7f18770941a056707529da897
+  - enabled: 1
+    path: Assets/00_Scenes/0302_ButtonTransition.unity
+    guid: 54ae1c027cab6604bb3731bee42cdd07
+  - enabled: 1
+    path: Assets/00_Scenes/0303_PixelPerfect.unity
+    guid: 297e99380c560ab449aece6d4511b416
+  - enabled: 1
+    path: Assets/00_Scenes/0304_KoreanFont.unity
+    guid: 1ea5291af0b975442a9e1c07be595a61
+  - enabled: 1
+    path: Assets/00_Scenes/0401_Bloom.unity
+    guid: c5306ddd2d10e0a48b3c4d45e96051f3
+  - enabled: 1
+    path: Assets/00_Scenes/0402_FastBullet.unity
+    guid: a4bd48ae062c172488c14eda9fd6fb8c
+  - enabled: 1
+    path: Assets/00_Scenes/0403_Trigger.unity
+    guid: 0bf47b25ef0c9ad46926fe2909b4718f
+  - enabled: 1
+    path: Assets/00_Scenes/0404_NavMesh.unity
+    guid: c364fa2c3323c8e4ba2ab6723aa0c336
+  - enabled: 1
+    path: Assets/00_Scenes/0501_ClassRules.unity
+    guid: 2c56194d25cb87d4bacf6229a9c42074
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

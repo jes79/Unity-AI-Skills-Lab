@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!-- 0301 B · 설정 화면: HUD 와 같은 UI Toolkit, 같은 HudTheme.uss 를 쓴다 -->
+    <Style src="HudTheme.uss" />
+    <ui:VisualElement name="SettingsWindow" class="hud-window">
+        <ui:Label text="설정" class="hud-title" />
+        <ui:VisualElement class="hud-row">
+            <ui:Label text="배경음" class="hud-label" />
+            <ui:Slider name="MusicSlider" low-value="0" high-value="100" value="70" />
+        </ui:VisualElement>
+        <ui:VisualElement class="hud-row">
+            <ui:Label text="효과음" class="hud-label" />
+            <ui:Slider name="SfxSlider" low-value="0" high-value="100" value="50" />
+        </ui:VisualElement>
+        <ui:VisualElement class="hud-row">
+            <ui:Label text="진동" class="hud-label" />
+            <ui:Toggle name="VibrationToggle" value="true" />
+        </ui:VisualElement>
+        <ui:Button name="CloseButton" text="닫기" class="hud-button" />
+    </ui:VisualElement>
+</ui:UXML>

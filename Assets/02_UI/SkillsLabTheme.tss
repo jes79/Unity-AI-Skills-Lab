@@ -1,0 +1,6 @@
+@import url("unity-theme://default");
+
+/* 예제 씬 기본 글꼴: Noto Sans KR (Assets/06_Fonts, OFL) */
+:root {
+    -unity-font-definition: url("/Assets/06_Fonts/NotoSansKR-Regular_UITK.asset");
+}

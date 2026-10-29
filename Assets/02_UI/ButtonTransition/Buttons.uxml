@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!-- 0302 버튼 3개. 모양·전환은 ButtonTransition_A.uss 또는 ButtonTransition_B.uss 가 정한다 (ButtonTransitionDemo 가 바꿔 끼움) -->
+    <ui:VisualElement name="ButtonRow" class="button-row">
+        <ui:Button name="StartButton" text="게임 시작" class="lab-button" />
+        <ui:Button name="ShopButton" text="상점" class="lab-button" />
+        <ui:Button name="SettingsButton" text="설정" class="lab-button" />
+    </ui:VisualElement>
+    <ui:Label text="마우스를 버튼 위에 올렸다가 떼 보세요. 뗄 때 크기·색이 돌아오는 모습을 보세요." class="button-hint" />
+</ui:UXML>

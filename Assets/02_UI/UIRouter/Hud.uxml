@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!-- 0301 이 프로젝트에 원래 있던 HUD (UI Toolkit). 테마는 HudTheme.uss -->
+    <Style src="HudTheme.uss" />
+    <ui:VisualElement name="HudBar" class="hud-bar">
+        <ui:Label name="HpLabel" text="체력 100" class="hud-stat hud-stat--hp" />
+        <ui:Label name="GoldLabel" text="골드 250" class="hud-stat hud-stat--gold" />
+        <ui:Button name="SettingsButton" text="설정" class="hud-button" />
+    </ui:VisualElement>
+</ui:UXML>

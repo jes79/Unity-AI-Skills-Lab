@@ -1,0 +1,12 @@
+/* 0501 B 결과 코드(ScoreCounterB)의 점수 글자 모양 */
+
+.score-label {
+    position: absolute;
+    left: 160px;
+    top: 300px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding: 8px 18px;
+    background-color: rgba(30, 60, 110, 0.85);
+    border-radius: 10px;
+}

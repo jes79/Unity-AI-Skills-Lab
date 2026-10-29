@@ -1,0 +1,836 @@
+{
+ "version": 1,
+ "id": "skillslab",
+ "title": "AI 스킬 랩",
+ "repo": {
+  "project": "Unity-AI-Skills-Lab",
+  "branch": "main",
+  "url": "https://github.com/jes79/Unity-AI-Skills-Lab"
+ },
+ "targetWords": [
+  "설정 화면",
+  "시작 버튼",
+  "버튼",
+  "HUD",
+  "도트 캐릭터",
+  "캐릭터",
+  "타일",
+  "글자",
+  "구슬",
+  "총알",
+  "벽",
+  "동전",
+  "플레이어",
+  "바닥",
+  "장애물",
+  "점수판",
+  "SKILL.md",
+  "스킬",
+  "플러그인",
+  "저장소",
+  "프로젝트",
+  "화면"
+ ],
+ "presenters": {
+  "art": {
+   "accent": "#f082aa",
+   "demoLine": "눈으로 봐야 알아요! 1 · 2 키로 A와 B를 번갈아 보세요.",
+   "nextLine": "다음 화면도 같이 비교해 볼까요?",
+   "role": "아트"
+  },
+  "dev": {
+   "accent": "#9682e6",
+   "demoLine": "직접 해 볼게요! 오른쪽 위 조작법대로 A·B를 바꿔 보세요.",
+   "nextLine": "좋아요, 다음 문제 갑니다!",
+   "role": "프로그래머"
+  },
+  "director": {
+   "accent": "#fabe50",
+   "demoLine": "지도에서 노란 칸을 보세요. ← → 로 다른 칸도 볼 수 있어요.",
+   "nextLine": "다음 용어로 넘어갈게요.",
+   "role": "디렉터"
+  },
+  "plan": {
+   "accent": "#78c88c",
+   "demoLine": "설명서대로 되는지 직접 확인해 보세요.",
+   "nextLine": "다음 순서, 문서 넘겨 볼게요.",
+   "role": "기획"
+  },
+  "sound": {
+   "accent": "#5abef0",
+   "demoLine": "스피커 켜고 직접 들어 보세요!",
+   "nextLine": "다음 소리, 들어 볼까요?",
+   "role": "사운드"
+  }
+ },
+ "categories": [
+  {
+   "n": 1,
+   "name": "기본 개념",
+   "folder": "01_Basics",
+   "presenter": "director",
+   "intro": "이 분야에서 회사 디렉터는 팀이 AI 도구를 들일 때 스킬·플러그인·CLI·MCP가 각각 무엇을 맡는지 먼저 정리합니다. 무엇이 '아는 것'이고 무엇이 '하는 것'인지 알아야, 어디에 무엇을 설치하고 어디까지 맡길지 정할 수 있어요.",
+   "numberExample": "스킬 30+ 권, Unity 6.0 이상",
+   "targetExample": "우리 팀 Unity 프로젝트",
+   "count": 5,
+   "wiki": ""
+  },
+  {
+   "n": 2,
+   "name": "설치와 부르기",
+   "folder": "02_Install",
+   "presenter": "plan",
+   "intro": "이 분야에서 회사 기획 팀은 팀원 모두가 같은 도구를 같은 방법으로 쓰도록 설치 순서와 확인 방법을 문서로 정합니다. 명령 몇 줄과 '목록이 뜨는지' 확인까지가 한 세트예요.",
+   "numberExample": "명령 2줄, local 범위",
+   "targetExample": "이 수업 저장소",
+   "count": 4,
+   "wiki": ""
+  },
+  {
+   "n": 3,
+   "name": "전/후 비교: UI·2D",
+   "folder": "03_CompareUI2D",
+   "presenter": "art",
+   "intro": "이 분야에서 회사 아트 팀은 화면에 보이는 결과가 의도대로 나오는지 눈으로 확인합니다. 버튼 전환, 도트 그림, 한글 글자처럼 '컴파일은 되는데 보기에 이상한' 문제가 스킬이 있을 때와 없을 때 가장 크게 갈려요.",
+   "numberExample": "0.4초 전환, PPU 16",
+   "targetExample": "로비 시작 버튼",
+   "count": 4,
+   "wiki": ""
+  },
+  {
+   "n": 4,
+   "name": "전/후 비교: 그래픽·물리·길찾기",
+   "folder": "04_CompareGfxPhysics",
+   "presenter": "dev",
+   "intro": "이 분야에서 회사 프로그래머는 렌더링 설정, 충돌 검사, 길찾기처럼 스위치 하나를 빠뜨리면 조용히 동작하지 않는 기능을 맡습니다. 에러 없이 '아무 일도 안 일어나는' 문제를 원인부터 짚어요.",
+   "numberExample": "150 m/s, 물리 0.02초",
+   "targetExample": "총알과 얇은 벽",
+   "count": 4,
+   "wiki": ""
+  },
+  {
+   "n": 5,
+   "name": "나만의 스킬 만들기",
+   "folder": "05_MySkill",
+   "presenter": "plan",
+   "intro": "이 분야에서 회사 기획 팀은 팀의 코드 규칙을 문서로 만들어 모두가 같은 모양의 결과를 내게 합니다. 그 문서를 SKILL.md 스킬로 저장소에 두면, AI도 같은 규칙대로 코드를 써요.",
+   "numberExample": "점수 +10, 목표 100",
+   "targetExample": "점수판 스크립트",
+   "count": 4,
+   "wiki": ""
+  },
+  {
+   "n": 6,
+   "name": "조심할 점",
+   "folder": "06_Caution",
+   "presenter": "director",
+   "intro": "이 분야에서 회사 디렉터는 새 도구가 편해진 만큼 생기는 위험과 조건을 챙깁니다. AI가 묻는 질문에 답하는 법, 결과가 이상할 때 다시 시키는 법, 남이 만든 스킬을 받을 때 확인할 것을 팀 규칙으로 정해요.",
+   "numberExample": "Unity 6.0 이상, 조건 3가지",
+   "targetExample": "남에게 받은 스킬 폴더",
+   "count": 4,
+   "wiki": ""
+  }
+ ],
+ "entries": [
+  {
+   "id": "0101",
+   "cat": 1,
+   "sub": "기본 개념",
+   "term": "스킬 (Skill)",
+   "easy": "AI에게 건네는 \"일 설명서\" 폴더",
+   "concept": "스킬은 폴더 하나예요. 그 안의 SKILL.md 맨 위에 이름(name)과 설명(description)을 YAML(맨 위 이름표 칸)로 적고, 아래에 AI가 따를 지시를 적어요. 필요하면 references(참고 자료)·scripts(실행할 코드)·assets(파일) 폴더를 같이 둬요. AI는 처음엔 이름과 설명만 읽고, 쓸 때가 되면 본문을 읽어요.",
+   "labView": "00_SkillMap 씬에서 플러그인 상자 안의 '스킬 한 권 = 폴더' 줄(SKILL.md · references/ · scripts/ · assets/)이 노랗게 강조된 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "지도에서 노란 테두리가 된 '스킬 한 권 = 폴더' 줄을 찾는다.",
+    "아래 설명 패널에서 SKILL.md 맨 위 YAML에 무엇이 들어가는지 읽는다.",
+    "→ 키로 0102 플러그인으로 넘어가, 스킬 여러 권이 한 상자에 묶인 모습과 비교한다."
+   ],
+   "check": "스킬은 '아는 것'(설명서)이라 혼자서는 아무것도 실행하지 않습니다. 이름·설명이 먼저 읽히고, 본문은 필요할 때 읽힌다는 점이 핵심입니다.",
+   "vague": "AI한테 Unity 잘하게 해줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 이 저장소의 .claude/skills/ 아래에 스킬 폴더를 하나 만들려고 해. SKILL.md 맨 위 YAML에 name과 description을 어떻게 쓰는지, 본문에는 무엇을 적는지, references/와 scripts/ 폴더는 언제 두는지 예시 1개로 설명해 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 플러그인 상자 안의 '스킬 한 권 = 폴더' 줄(SKILL.md · references/ · scripts/ · assets/)이 노랗게 강조된 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0102",
+   "cat": 1,
+   "sub": "기본 개념",
+   "term": "플러그인 (Plugin)",
+   "easy": "스킬 여러 권 + 도구를 한 상자에 묶은 것",
+   "concept": "플러그인은 스킬 여러 권과 도구를 한 번에 설치하는 상자예요. Unity 공식 플러그인(Unity Technologies의 unity-agent-plugin)은 Claude Code용 29개, Codex용 31개 스킬로 나왔고 지금은 30개가 넘어요. Unity 6.0 이상에서 쓰고, Asset Store나 Package Manager 패키지가 아니라 AI 도구 쪽에 설치해요.",
+   "labView": "00_SkillMap 씬에서 플러그인 상자 전체와 안의 스킬 이름 칩(/ui · /ui-uitk …)이 강조된 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "플러그인 상자 안의 스킬 이름 칩(/ui, /urp-postprocessing …)을 읽어 본다.",
+    "설명 패널에서 Claude Code용·Codex용 스킬 수와 발표 날짜(2026-09-09, 2026-09-16)를 확인한다.",
+    "상자가 Unity 에디터가 아니라 AI 도구 쪽 화살표에 붙어 있는 것을 확인한다."
+   ],
+   "check": "플러그인은 Unity 프로젝트(Packages 폴더)에 들어가는 패키지가 아니라 AI 도구(Claude Code · Codex)에 설치하는 묶음입니다.",
+   "vague": "Unity 플러그인 깔아줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity: 목록에 보이는 스킬 중 UI·그래픽·물리 쪽 스킬 5개를 골라 각각 언제 쓰는지 한 줄씩 알려 주고, 이 플러그인이 Package Manager 패키지와 무엇이 다른지도 적어 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 플러그인 상자 전체와 안의 스킬 이름 칩(/ui · /ui-uitk …)이 강조된 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0103",
+   "cat": 1,
+   "sub": "기본 개념",
+   "term": "Unity CLI",
+   "easy": "터미널에서 Unity를 움직이는 \"손\"",
+   "concept": "Unity CLI는 터미널(명령 창)에서 Unity를 설치하고 열고 상태를 확인하는 명령 도구예요. 플러그인 스킬 중 에디터를 직접 조종하는 스킬은 이 CLI 명령을 실행해서 일해요. 그래서 CLI가 설치돼 있고, 프로젝트에 Pipeline 패키지가 있고, 에디터가 열려 있어야 해요.",
+   "labView": "00_SkillMap 씬에서 'Unity CLI — 손' 칸과 Unity 에디터로 가는 화살표가 강조된 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "CLI 칸과 에디터 칸 사이 화살표가 노랗게 된 것을 본다.",
+    "설명 패널의 설치 명령(irm https://unity.com/install.ps1 | iex 또는 winget install Unity.CLI)을 읽는다.",
+    "CLI가 설치된 PC라면 터미널에서 unity status 로 에디터 연결을 확인해 본다."
+   ],
+   "check": "스킬은 '무엇을 할지' 알고, CLI는 그것을 '실제로 하는' 손입니다. CLI가 없으면 에디터 조종 스킬은 설명만 하고 실행은 못 합니다.",
+   "vague": "AI가 Unity 에디터 직접 만지게 해줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. Windows PowerShell에서 Unity CLI를 설치하고(winget install Unity.CLI), 이 프로젝트에 Pipeline 패키지를 넣은 뒤(unity pipeline install) unity status 로 에디터 연결을 확인하는 순서를 3단계로 알려줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 'Unity CLI — 손' 칸과 Unity 에디터로 가는 화살표가 강조된 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0104",
+   "cat": 1,
+   "sub": "기본 개념",
+   "term": "MCP",
+   "easy": "AI와 프로그램을 잇는 표준 \"전화선\"",
+   "concept": "MCP(Model Context Protocol)는 AI 도구와 다른 프로그램을 잇는 표준 연결 방식이에요. Unity 플러그인은 스킬만 담고 MCP 서버는 쓰지 않아요. MCP로 Unity를 잇고 싶으면 unity mcp configure 로 따로 설정해요.",
+   "labView": "00_SkillMap 씬에서 'MCP — 전화선' 칸이 플러그인 상자와 따로 떨어진 채 강조된 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "MCP 칸이 플러그인 상자 밖에 따로 있는 것을 확인한다.",
+    "설명 패널에서 '플러그인은 MCP 서버를 쓰지 않는다'는 줄을 읽는다.",
+    "→ 키로 0105로 넘어가 스킬·CLI·MCP를 한 단계씩 비교한다."
+   ],
+   "check": "플러그인을 설치했다고 MCP가 연결되는 것은 아닙니다. MCP는 따로 하는 설정(unity mcp configure)입니다.",
+   "vague": "MCP 연결해줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 플러그인과 별개로 Unity MCP 서버도 쓰고 싶어. unity mcp configure 가 하는 일과, 플러그인 스킬만 쓸 때와 무엇이 다른지 2가지로 비교해 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 'MCP — 전화선' 칸이 플러그인 상자와 따로 떨어진 채 강조된 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0105",
+   "cat": 1,
+   "sub": "기본 개념",
+   "term": "스킬 · CLI · MCP 차이",
+   "easy": "아는 것(스킬) vs 하는 것(CLI·MCP)",
+   "concept": "스킬은 '언제 어떻게 할지' 적힌 설명서라서 AI가 읽는 것이에요. Unity CLI와 MCP는 실제로 에디터를 움직이는 길이라서 AI가 '하는' 데 써요. 비유하면 스킬은 요리책, CLI·MCP는 손과 전화예요. 항상 읽는 규칙(AGENTS.md·CLAUDE.md)과 달리 스킬은 필요할 때만 꺼내 읽어요.",
+   "labView": "00_SkillMap 씬에서 Space를 눌러 ① 스킬 → ② CLI → ③ MCP → ④ 전체 순서로 강조가 옮겨 가는 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "Space를 한 번씩 눌러 ①~④ 단계를 차례로 본다.",
+    "④ 전체 단계에서 '아는 것'과 '하는 것'이 어느 칸인지 말로 짚어 본다.",
+    "AGENTS.md·CLAUDE.md(항상 읽는 규칙)와 스킬(필요할 때 읽음)의 차이를 한 줄로 적어 본다."
+   ],
+   "check": "스킬만 있으면 '아는' 것까지, CLI나 MCP가 있어야 '하는' 것까지 됩니다. 둘을 섞어 말하면 무엇을 설치해야 할지 헷갈립니다.",
+   "vague": "스킬이랑 MCP 차이 뭐야",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 스킬, Unity CLI, MCP, AGENTS.md 4가지를 '아는 것 / 하는 것 / 항상 읽는 것'으로 나눈 표를 만들어 주고, 내 프로젝트에서 각각 어디에 있는지(폴더·명령) 한 줄씩 적어 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 Space를 눌러 ① 스킬 → ② CLI → ③ MCP → ④ 전체 순서로 강조가 옮겨 가는 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0201",
+   "cat": 2,
+   "sub": "설치와 부르기",
+   "term": "Claude Code에 설치",
+   "easy": "명령 두 줄로 Unity 설명서 30권 받기",
+   "concept": "Claude Code 세션 안에서 먼저 마켓플레이스(플러그인 목록)를 추가하고, 그다음 unity 플러그인을 설치해요. 설치 범위(scope)는 user(내 모든 프로젝트), project(저장소를 같이 쓰는 모두), local(나만, 이 저장소만) 중에서 골라요. 전/후 비교 실습은 플러그인을 껐다(disable) 켰다(enable) 하면서 해요.",
+   "labView": "00_SkillMap 씬에서 Claude Code 칸이 강조된 채 Space로 설치 명령 ① · ② → 범위 → 전/후 실습(disable/enable) 순서로 설치 패널을 넘겨 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "Space를 눌러 ① /plugin marketplace add, ② /plugin install 명령을 차례로 본다.",
+    "범위 단계에서 user · project · local 중 수업용으로 무엇을 고를지 정한다.",
+    "마지막 단계의 claude plugin disable / enable 명령을 메모하고, 실습 때 같은 요청을 끄고·켜고 해 본다."
+   ],
+   "check": "세션 안에서는 /plugin marketplace add Unity-Technologies/unity-agent-plugin → /plugin install unity@unity-agent-plugin, 터미널에서는 claude plugin install unity@unity-agent-plugin --scope local 입니다. 끄고 켜기는 disable / enable 입니다.",
+   "vague": "클로드에 유니티 깔아줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code에 Unity 플러그인 설치됨. 이 수업 저장소에서 플러그인 전/후 결과를 비교하려고 해. 플러그인을 잠깐 끄고(disable) 같은 요청을 한 뒤 다시 켜는(enable) 명령을 터미널용과 세션 안(/plugin)용 2가지로 알려 주고, 다시 켜진 것을 /unity: 로 확인하는 방법도 적어 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 Claude Code 칸이 강조된 채 Space로 설치 명령 ① · ② → 범위 → 전/후 실습(disable/enable) 순서로 설치 패널을 넘겨 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0202",
+   "cat": 2,
+   "sub": "설치와 부르기",
+   "term": "Codex에 설치",
+   "easy": "Codex도 같은 상자, 명령만 조금 다름",
+   "concept": "Codex는 터미널에서 codex plugin 명령으로 같은 Unity 플러그인을 설치해요. 마켓플레이스를 추가하고(marketplace add), 플러그인을 더해요(plugin add). Codex는 끄기 대신 빼기(remove)와 다시 넣기(add)로 전/후를 비교해요.",
+   "labView": "00_SkillMap 씬에서 Codex 칸이 강조된 채 Space로 설치 명령 ① · ② → 확인·업데이트·전/후 실습(remove/add) 단계를 넘겨 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "Space로 ① codex plugin marketplace add, ② codex plugin add 명령을 본다.",
+    "codex plugin list 로 설치를 확인하는 줄을 찾는다.",
+    "전/후 실습용 codex plugin remove → 같은 요청 → codex plugin add 순서를 메모한다."
+   ],
+   "check": "Claude Code의 install 자리에 Codex는 add, disable 자리에 remove 를 씁니다. 업데이트는 codex plugin marketplace upgrade unity-agent-plugin 입니다.",
+   "vague": "코덱스에도 유니티 깔아줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Codex에 Unity 플러그인 설치됨. 플러그인이 없을 때와 있을 때 같은 요청의 결과를 비교하고 싶어. codex plugin remove 와 codex plugin add 로 빼고 다시 넣는 순서를 3단계로 정리하고, 다시 넣은 뒤 codex plugin list 와 /unity: 로 확인하는 방법을 알려줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 Codex 칸이 강조된 채 Space로 설치 명령 ① · ② → 확인·업데이트·전/후 실습(remove/add) 단계를 넘겨 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0203",
+   "cat": 2,
+   "sub": "설치와 부르기",
+   "term": "설치 확인 (/unity:)",
+   "easy": "목록이 뜨면 설명서가 꽂힌 것",
+   "concept": "설치가 됐는지는 입력창에 /unity: 를 쳐서 스킬 목록이 뜨는지로 확인해요. Claude Code는 /plugin 화면에서도 설치 상태를 볼 수 있고, Codex는 codex plugin list 로 봐요. Claude Code에서 새 버전은 /plugin marketplace update unity-agent-plugin 다음 /reload-plugins 로 받아요.",
+   "labView": "00_SkillMap 씬에서 플러그인 상자 안 스킬 칩들이 강조되고, 설명 패널에 /unity:ui 같은 확인 예가 나오는 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "설명 패널의 /unity:ui · /unity:ui-uitk · /unity:2d-pixel-perfect 예를 읽는다.",
+    "내 Claude Code(또는 Codex)에서 /unity: 를 쳐서 목록이 뜨는지 본다.",
+    "목록이 안 뜨면 /plugin(또는 codex plugin list)으로 설치 상태부터 확인한다."
+   ],
+   "check": "목록이 뜨면 스킬이 꽂힌 것이고, 안 뜨면 설치·범위·다시 불러오기(/reload-plugins)부터 확인합니다.",
+   "vague": "플러그인 됐는지 봐줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity: 를 쳤는데 목록이 안 떠. Claude Code는 /plugin 과 /reload-plugins, Codex는 codex plugin list 로 확인하는 순서를 3단계로 알려 주고, 업데이트 명령도 같이 적어 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 플러그인 상자 안 스킬 칩들이 강조되고, 설명 패널에 /unity:ui 같은 확인 예가 나오는 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0204",
+   "cat": 2,
+   "sub": "설치와 부르기",
+   "term": "자동 호출 vs 직접 부르기",
+   "easy": "AI가 알아서 꺼내거나, 내가 이름을 불러 꺼내거나",
+   "concept": "요청이 스킬의 설명(description)과 맞으면 AI가 스킬을 알아서 꺼내 읽어요(자동 호출). 안 꺼내면 내가 이름을 불러요: Claude Code는 /스킬이름(플러그인 스킬은 /unity:ui 처럼), Codex는 $스킬이름이나 /skills 예요. Codex는 처음에 스킬 이름·설명·경로만 읽고(문맥의 2% 안), 고른 스킬만 SKILL.md 전체를 읽어요.",
+   "labView": "00_SkillMap 씬에서 Space로 '자동 호출' 단계와 '직접 부르기' 단계를 번갈아 보고, 사람 → AI 화살표가 언제 강조되는지 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "① 자동 호출 단계에서 AI → 플러그인 화살표만 강조된 것을 본다.",
+    "Space로 ② 직접 부르기로 넘겨 사람 → AI 화살표까지 강조된 것을 본다.",
+    "내 도구에서 같은 요청을 이름 없이 한 번, /unity:ui-uitk(Codex는 $스킬이름)를 붙여 한 번 해 본다."
+   ],
+   "check": "자동으로 불리는지는 description이 요청과 얼마나 맞는지에 달려 있습니다. 꼭 쓰고 싶으면 이름을 직접 부릅니다.",
+   "vague": "스킬 써서 해줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity:ui-uitk 스킬을 써서 로비 시작 버튼에 마우스를 올리면 0.2초 동안 1.1배로 커지는 UI Toolkit 버튼을 만들어 줘. 만들기 전에 어떤 스킬을 읽었는지 먼저 말해 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 Space로 '자동 호출' 단계와 '직접 부르기' 단계를 번갈아 보고, 사람 → AI 화살표가 언제 강조되는지 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0301",
+   "cat": 3,
+   "sub": "전/후 비교: UI·2D",
+   "term": "UI 시스템 고르기 (/ui)",
+   "easy": "프로젝트가 쓰는 UI 방식을 먼저 확인",
+   "concept": "Unity에는 UI를 만드는 방식이 여러 개예요: UI Toolkit(UXML·USS 파일로 만드는 방식), uGUI(Canvas 위에 오브젝트를 놓는 방식), IMGUI(OnGUI 코드). /ui 스킬은 프로젝트가 어떤 방식을 쓰는지 먼저 보고 그 방식의 전문 스킬로 넘겨요. 확인 없이 만들면 이미 있는 HUD와 모양·글꼴이 다른 화면이 하나 더 생겨요.",
+   "labView": "0301_UIRouter 씬에서 UI Toolkit HUD(체력 · 골드 · 설정) 위의 '설정 화면'을 A(uGUI Canvas)와 B(UI Toolkit)로 바꿔 보며 모양·글꼴·겹침을 비교한다.",
+   "controls": "1 : A · 스킬 없이 흔히 나오는 결과(재현) — uGUI Canvas 설정 창\n2 : B · 스킬을 쓴 결과(재현) — UI Toolkit 설정 화면\nTab : A ↔ B 바꾸기\n마우스 : 설정 창의 닫기로 닫고, HUD 의 '설정' 버튼으로 다시 열기",
+   "tryThis": [
+    "1을 눌러 A의 회색 설정 창이 HUD 위에 겹치고 글꼴이 다른 것을 본다.",
+    "2를 눌러 B의 설정 화면이 HUD와 같은 색·둥근 모서리·글꼴인 것을 본다.",
+    "닫기를 누른 뒤 HUD의 '설정' 버튼으로 다시 열어, 두 쪽 모두 실제로 동작하는지 확인한다."
+   ],
+   "check": "A는 한 화면에 UI 방식이 두 가지(UI Toolkit + uGUI) 섞여 있고, 고정 픽셀 크기라 해상도가 바뀌면 더 어긋납니다. B는 UXML과 HudTheme.uss 하나로 통일돼 있습니다.",
+   "vague": "설정 화면 만들어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 이 프로젝트 HUD는 UI Toolkit(Hud.uxml + HudTheme.uss)이야. /unity:ui 로 UI 방식을 먼저 확인하고, 같은 UI Toolkit으로 배경음·효과음 슬라이더 2개와 진동 토글이 있는 설정 화면을 HudTheme.uss 테마 그대로 만들어 줘.",
+   "script": "UIRouterDemo.cs, Hud.uxml, SettingsWindow.uxml, HudTheme.uss",
+   "dim": "UI",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0301_UIRouter",
+   "scenePath": "Assets/00_Scenes/0301_UIRouter.unity",
+   "shows": "0301_UIRouter 씬에서 UI Toolkit HUD(체력 · 골드 · 설정) 위의 '설정 화면'을 A(uGUI Canvas)와 B(UI Toolkit)로 바꿔 보며 모양·글꼴·겹침을 비교한다.",
+   "lab": {
+    "scene": "0301_UIRouter"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0302",
+   "cat": 3,
+   "sub": "전/후 비교: UI·2D",
+   "term": "버튼 전환이 툭 돌아감 (/ui-uitk)",
+   "easy": "전환을 '기본 모양'에 걸어야 갈 때도 부드럽다",
+   "concept": "USS의 transition(전환)은 값이 바뀔 때 몇 초 동안 부드럽게 바꿀지를 정해요. 전환을 :hover(마우스를 올린 상태)에만 적으면, 올릴 땐 전환이 있지만 마우스를 떼어 기본 모양으로 돌아갈 땐 전환이 없어 툭 돌아가요. 전환을 기본 클래스(.lab-button)에 적어야 두 방향 모두 부드러워요.",
+   "labView": "0302_ButtonTransition 씬에서 버튼 3개에 마우스를 올렸다 떼며 A(ButtonTransition_A.uss)와 B(ButtonTransition_B.uss)의 돌아오는 모습을 비교한다. 아래 패널에 지금 끼운 USS 원문이 나온다.",
+   "controls": "1 : A · transition 을 :hover 에만 (ButtonTransition_A.uss)\n2 : B · transition 을 기본 클래스에 (ButtonTransition_B.uss)\nTab : A ↔ B 바꾸기\n마우스 : 버튼 위에 올렸다가 떼기",
+   "tryThis": [
+    "1(A)에서 버튼에 마우스를 올려 0.4초 동안 커지는 것을 보고, 떼는 순간 툭 돌아오는 것을 본다.",
+    "2(B)에서 같은 동작을 해, 떼어도 0.4초 동안 줄어드는 것을 본다.",
+    "아래 USS 원문에서 transition 세 줄이 A는 :hover 안에, B는 .lab-button 안에 있는 것을 찾는다."
+   ],
+   "check": "두 USS는 transition 세 줄의 자리만 다릅니다. 에러도 경고도 없지만 A는 나갈 때 전환이 없습니다.",
+   "vague": "버튼 호버 애니메이션 넣어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. UI Toolkit 버튼(.lab-button)에 마우스를 올리면 0.4초 동안 1.25배로 커지고 색이 주황으로 바뀌게 USS로 만들어 줘. 마우스를 뗄 때도 같은 0.4초로 부드럽게 돌아오게 transition 은 :hover 가 아니라 기본 클래스에 넣어 줘.",
+   "script": "ButtonTransitionDemo.cs, Buttons.uxml, ButtonTransition_A.uss, ButtonTransition_B.uss",
+   "dim": "UI",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0302_ButtonTransition",
+   "scenePath": "Assets/00_Scenes/0302_ButtonTransition.unity",
+   "shows": "0302_ButtonTransition 씬에서 버튼 3개에 마우스를 올렸다 떼며 A(ButtonTransition_A.uss)와 B(ButtonTransition_B.uss)의 돌아오는 모습을 비교한다. 아래 패널에 지금 끼운 USS 원문이 나온다.",
+   "lab": {
+    "scene": "0302_ButtonTransition"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0303",
+   "cat": 3,
+   "sub": "전/후 비교: UI·2D",
+   "term": "픽셀아트 흐림·떨림 (/2d-pixel-perfect)",
+   "easy": "도트 그림이 뭉개지고 떨리는 것 막기",
+   "concept": "도트 그림은 한 칸 한 칸이 화면 픽셀에 딱 맞아야 선명해요. 그림 가져오기를 기본값(Bilinear 필터 = 칸 사이 색을 섞음, 압축 = 색이 번짐)으로 두고 PPU(1칸 크기에 들어가는 픽셀 수)가 그림마다 다르면 뭉개져요. 카메라가 소수점 위치로 따라가면 걸을 때 픽셀이 떨려요. Point 필터 · 압축 없음 · PPU 통일 + Pixel Perfect Camera로 막아요.",
+   "labView": "0303_PixelPerfect 씬에서 좌우로 걷는 도트 기사와 땅 타일을 A(Bilinear · 압축 · PPU 13 · 보통 카메라)와 B(Point · 압축 없음 · PPU 16 · Pixel Perfect Camera)로 바꿔 본다. 아래 패널에 실제 텍스처 설정 값이 나온다.",
+   "controls": "1 : A · Bilinear · 압축 · PPU 13(타일은 16) · Pixel Perfect Camera 끔\n2 : B · Point · 압축 없음 · PPU 16 · Pixel Perfect Camera(URP 2D) 켬\nTab : A ↔ B 바꾸기\n(캐릭터는 저절로 좌우로 걷고 카메라가 따라감)",
+   "tryThis": [
+    "1(A)에서 캐릭터 테두리와 눈이 흐리게 번지는 것을 본다.",
+    "A에서 캐릭터가 걸을 때 도트 경계가 흔들리는지 잠시 지켜본다.",
+    "2(B)로 바꿔 같은 그림이 칸마다 또렷하고, 캐릭터 크기가 타일 칸과 맞는 것을 본다."
+   ],
+   "check": "A는 캐릭터(PPU 13)가 타일(PPU 16)보다 커 보이고 테두리가 번집니다. B는 화면이 240x135 기준으로 정수 배(1920x1080에서 8배) 확대돼 칸이 고르게 보입니다.",
+   "vague": "도트 게임 화면 만들어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 2D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 16x16 도트 캐릭터와 타일을 쓰는 화면이야. /unity:2d-pixel-perfect 를 써서 스프라이트 가져오기를 Point 필터 · 압축 없음 · PPU 16으로 맞추고, 기준 해상도 240x135 Pixel Perfect Camera를 2D 렌더러 카메라에 설정해 줘.",
+   "script": "PixelPerfectDemo.cs, PixelWalker.cs",
+   "dim": "2D",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0303_PixelPerfect",
+   "scenePath": "Assets/00_Scenes/0303_PixelPerfect.unity",
+   "shows": "0303_PixelPerfect 씬에서 좌우로 걷는 도트 기사와 땅 타일을 A(Bilinear · 압축 · PPU 13 · 보통 카메라)와 B(Point · 압축 없음 · PPU 16 · Pixel Perfect Camera)로 바꿔 본다. 아래 패널에 실제 텍스처 설정 값이 나온다.",
+   "lab": {
+    "scene": "0303_PixelPerfect"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0304",
+   "cat": 3,
+   "sub": "전/후 비교: UI·2D",
+   "term": "한글이 네모로 나옴 (/optimize-text-mesh-pro)",
+   "easy": "한글 글꼴을 예비 글꼴로 붙이기",
+   "concept": "TextMeshPro(TMP)의 기본 글꼴 LiberationSans SDF에는 한글 글자가 없어서, 한글 자리가 빠진 글자 표시(□)로 나와요. 한글 글꼴로 동적(Dynamic: 쓰는 글자만 그때그때 그려 넣음) 글꼴 에셋을 만들어 기본 글꼴의 Fallback(예비 글꼴) 목록에 붙이면, 영문은 원래 글꼴로, 한글은 예비 글꼴로 채워져요. 이 랩은 무료 글꼴 Noto Sans KR(OFL 라이선스)을 저장소에 넣었어요.",
+   "labView": "0304_KoreanFont 씬에서 TMP 글자 '체력 100 / 골드 250'을 A(기본 글꼴만)와 B(Noto Sans KR Fallback)로 바꿔 보고, 아래 패널에서 지금 글꼴 에셋의 Fallback 목록을 확인한다.",
+   "controls": "1 : A · LiberationSans SDF 만 (예비 글꼴에 한글 없음)\n2 : B · LiberationSans SDF (KR Fallback) — Noto Sans KR 동적 글꼴을 예비 글꼴로\nTab : A ↔ B 바꾸기",
+   "tryThis": [
+    "1(A)에서 '체력'·'골드' 자리가 □ 로 나오고 숫자 100·250은 보이는 것을 본다.",
+    "2(B)로 바꿔 같은 글자가 한글로 채워지는 것을 본다.",
+    "아래 패널의 Fallback Font Assets 줄이 A와 B에서 어떻게 다른지 읽는다."
+   ],
+   "check": "글자를 바꾼 것이 아니라 글꼴 에셋의 Fallback 목록만 다릅니다. 숫자·영문은 두 쪽 모두 LiberationSans로 그려집니다.",
+   "vague": "한글 깨져, 고쳐줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. TextMeshPro로 HUD 글자 '체력 100 / 골드 250'을 띄우면 한글이 □ 로 나와. /unity:optimize-text-mesh-pro 를 써서 Assets/06_Fonts 의 Noto Sans KR(OFL)로 동적 TMP 글꼴 에셋을 만들고, 기본 글꼴의 Fallback 에 1개 붙이는 방법을 알려줘.",
+   "script": "KoreanFontDemo.cs",
+   "dim": "UI",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0304_KoreanFont",
+   "scenePath": "Assets/00_Scenes/0304_KoreanFont.unity",
+   "shows": "0304_KoreanFont 씬에서 TMP 글자 '체력 100 / 골드 250'을 A(기본 글꼴만)와 B(Noto Sans KR Fallback)로 바꿔 보고, 아래 패널에서 지금 글꼴 에셋의 Fallback 목록을 확인한다.",
+   "lab": {
+    "scene": "0304_KoreanFont"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0401",
+   "cat": 4,
+   "sub": "전/후 비교: 그래픽·물리·길찾기",
+   "term": "블룸이 안 보임 (/urp-postprocessing)",
+   "easy": "효과는 켰는데 카메라 스위치가 꺼져 있다",
+   "concept": "블룸(Bloom)은 아주 밝은 곳 주변으로 빛이 번지게 하는 화면 효과예요. URP에서는 Volume(화면 효과 설정 상자)에 Bloom을 넣고, 그 화면을 찍는 카메라의 Post Processing 스위치도 켜야 보여요. 스위치가 꺼져 있으면 에러 없이 그냥 효과가 안 나와요.",
+   "labView": "0401_Bloom 씬에서 빛나는 구슬 5개를 A(카메라 Post Processing 꺼짐)와 B(켬)로 바꿔 보고, 아래 패널에서 Volume의 Bloom 값과 카메라 스위치 상태를 확인한다.",
+   "controls": "1 : A · Volume 에 Bloom 있음, 카메라 Post Processing 꺼짐\n2 : B · 같은 Volume, 카메라 Post Processing 켬\nTab : A ↔ B 바꾸기",
+   "tryThis": [
+    "1(A)에서 구슬이 밝지만 둘레가 번지지 않는 것을 본다.",
+    "2(B)로 바꿔 구슬 둘레로 빛이 퍼지는 것을 본다.",
+    "아래 패널에서 두 쪽 모두 'Bloom 있음'이고 카메라 줄만 다른 것을 확인한다."
+   ],
+   "check": "Volume 설정은 A와 B가 똑같습니다. 다른 것은 Main Camera › Rendering › Post Processing 체크 하나뿐입니다.",
+   "vague": "블룸 넣어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 빛나는 구슬(Emission 강도 6)에 블룸을 넣고 싶어. /unity:urp-postprocessing 으로 Global Volume에 Bloom(Intensity 2.5, Threshold 1)을 넣고, Main Camera의 Post Processing 체크까지 확인하는 순서를 알려줘.",
+   "script": "BloomDemo.cs",
+   "dim": "3D 그래픽",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0401_Bloom",
+   "scenePath": "Assets/00_Scenes/0401_Bloom.unity",
+   "shows": "0401_Bloom 씬에서 빛나는 구슬 5개를 A(카메라 Post Processing 꺼짐)와 B(켬)로 바꿔 보고, 아래 패널에서 Volume의 Bloom 값과 카메라 스위치 상태를 확인한다.",
+   "lab": {
+    "scene": "0401_Bloom"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0402",
+   "cat": 4,
+   "sub": "전/후 비교: 그래픽·물리·길찾기",
+   "term": "빠른 총알이 벽을 뚫음 (/physics-3d-collision)",
+   "easy": "너무 빠르면 벽을 건너뛴다 → 연속 충돌",
+   "concept": "물리 엔진은 0.02초(Fixed Timestep)마다 한 번씩 물체 위치를 보고 겹쳤는지 검사해요(Discrete). 총알이 한 번에 벽 두께보다 멀리 가면 벽 앞과 벽 뒤만 보고 벽을 건너뛰어요. Rigidbody의 Collision Detection을 Continuous Dynamic(연속 충돌: 지나온 길 전체를 검사)으로 바꾸면 빨라도 맞아요.",
+   "labView": "0402_FastBullet 씬에서 Space로 두께 0.1m 벽에 총알을 쏘고, A(Discrete)와 B(Continuous Dynamic)의 '맞음 / 뚫고 지나감' 수를 비교한다. ↑↓로 속도를 바꿔 본다.",
+   "controls": "1 : A · Collision Detection = Discrete\n2 : B · Collision Detection = Continuous Dynamic\nTab : A ↔ B 바꾸기 (바꾸면 수를 0부터 다시 셈)\nSpace : 총알 발사\n↑ / ↓ : 총알 속도 바꾸기 (15 · 30 · 60 · 100 · 150 · 250 m/s)",
+   "tryThis": [
+    "1(A)에서 Space를 몇 번 눌러 150 m/s 총알이 벽을 뚫고 지나가는 것(뚫고 지나감 수)을 본다.",
+    "↓를 여러 번 눌러 15 m/s로 낮춘 뒤 쏘면 A에서도 맞는 것을 본다.",
+    "2(B)로 바꿔 250 m/s로 올려도 벽에 빨간 표시가 남으며 맞는 것을 본다."
+   ],
+   "check": "아래 패널의 '물리 한 번에 ○ m 이동'이 벽 두께(0.1m)와 총알 크기를 합친 것보다 크면 Discrete는 뚫립니다. Continuous Dynamic은 속도와 관계없이 맞습니다.",
+   "vague": "총알이 벽 뚫어, 고쳐줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 150 m/s로 나가는 총알(Rigidbody, 반지름 0.15m)이 두께 0.1m 벽을 뚫고 지나가. /unity:physics-3d-collision 으로 원인을 설명하고, Collision Detection을 Continuous Dynamic으로 바꾸는 방법과 레이캐스트로 막는 방법을 비교해 줘.",
+   "script": "FastBulletDemo.cs, FastBullet.cs",
+   "dim": "3D 물리",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0402_FastBullet",
+   "scenePath": "Assets/00_Scenes/0402_FastBullet.unity",
+   "shows": "0402_FastBullet 씬에서 Space로 두께 0.1m 벽에 총알을 쏘고, A(Discrete)와 B(Continuous Dynamic)의 '맞음 / 뚫고 지나감' 수를 비교한다. ↑↓로 속도를 바꿔 본다.",
+   "lab": {
+    "scene": "0402_FastBullet"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0403",
+   "cat": 4,
+   "sub": "전/후 비교: 그래픽·물리·길찾기",
+   "term": "트리거가 안 불림 (/physics-3d-collision)",
+   "easy": "둘 중 하나는 Rigidbody가 있어야 한다",
+   "concept": "OnTriggerEnter(트리거 영역에 들어왔을 때 불리는 함수)는 만난 두 물체 중 적어도 하나에 Rigidbody(물리로 움직이는 부품)가 있어야 불려요. 둘 다 Collider만 있으면 물리 엔진은 둘 다 '가만히 있는 물체'로 보고 트리거 검사를 하지 않아요. 위치를 코드로 옮기는 플레이어라면 Rigidbody를 붙이고 Is Kinematic(물리에 밀리지 않음)을 켜요.",
+   "labView": "0403_Trigger 씬에서 좌우로 오가는 파란 큐브(플레이어)가 동전 3개를 지나갈 때, A(Rigidbody 없음)와 B(Kinematic Rigidbody)의 'OnTriggerEnter 호출' 수를 비교한다.",
+   "controls": "1 : A · 플레이어에 Box Collider 만 (Rigidbody 없음)\n2 : B · 플레이어에 Rigidbody(Is Kinematic) 붙임\nTab : A ↔ B 바꾸기\nR : 호출 수 0으로",
+   "tryThis": [
+    "1(A)에서 큐브가 동전을 지나가도 호출 수가 0인 것을 본다.",
+    "2(B)로 바꿔 지날 때마다 동전이 초록으로 빛나고 호출 수가 오르는 것을 본다.",
+    "R로 0을 만든 뒤 한 번 왕복하는 동안 호출 수가 몇이 되는지 센다 (동전 3개 × 2번)."
+   ],
+   "check": "코드(CoinZone.OnTriggerEnter)는 A와 B가 같습니다. 다른 것은 플레이어에 Rigidbody가 있는지 하나뿐입니다.",
+   "vague": "트리거가 안 돼",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 플레이어를 transform.position 으로 3 m/s 움직이는데, Is Trigger 동전 영역에 들어가도 OnTriggerEnter 가 안 불려. /unity:physics-3d-collision 으로 원인을 확인하고, 플레이어에 Kinematic Rigidbody를 붙이는 방법과 Rigidbody.MovePosition 으로 옮기는 코드를 알려줘.",
+   "script": "TriggerDemo.cs, CoinZone.cs",
+   "dim": "3D 물리",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0403_Trigger",
+   "scenePath": "Assets/00_Scenes/0403_Trigger.unity",
+   "shows": "0403_Trigger 씬에서 좌우로 오가는 파란 큐브(플레이어)가 동전 3개를 지나갈 때, A(Rigidbody 없음)와 B(Kinematic Rigidbody)의 'OnTriggerEnter 호출' 수를 비교한다.",
+   "lab": {
+    "scene": "0403_Trigger"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0404",
+   "cat": 4,
+   "sub": "전/후 비교: 그래픽·물리·길찾기",
+   "term": "길찾기 설정 (/initialize-ai-navigation)",
+   "easy": "옛날 굽기 방식 대신 NavMesh Surface",
+   "concept": "NavMesh(내비메시)는 캐릭터가 걸을 수 있는 바닥을 미리 계산해 둔 지도예요. Unity 6에서는 AI Navigation 패키지의 NavMeshSurface 컴포넌트로 이 지도를 구워요(Bake). 옛 튜토리얼처럼 Static 표시만 하고 Navigation 창에서 굽는 안내만 따르면 NavMesh가 없어서, 에이전트(NavMeshAgent)가 경고를 남기고 움직이지 않아요.",
+   "labView": "0404_NavMesh 씬에서 바닥을 클릭해 에이전트를 보내 보고, A(NavMesh 없음 → 경고 후 멈춤)와 B(NavMeshSurface로 구움 → 하늘색 NavMesh 위로 장애물을 돌아감)를 비교한다.",
+   "controls": "1 : A · 옛 방식 안내만 (NavMeshSurface 없음 → NavMesh 없음)\n2 : B · NavMeshSurface 로 구운 NavMesh\nTab : A ↔ B 바꾸기\n마우스 왼쪽 클릭 : 바닥의 그 자리로 에이전트 보내기",
+   "tryThis": [
+    "1(A)에서 바닥을 클릭해도 에이전트가 움직이지 않고 아래에 경고 문구가 나오는 것을 본다.",
+    "2(B)로 바꿔 에이전트가 노란 선을 따라 벽 끝을 돌아 목표로 가는 것을 본다.",
+    "B에서 벽 반대편 여러 곳을 클릭해 길이 매번 장애물을 피해 다시 계산되는 것을 본다."
+   ],
+   "check": "A의 문구 'Failed to create agent because it is not close enough to the NavMesh'는 Unity가 실제로 콘솔에 남기는 경고를 재현한 것입니다. 하늘색 판이 구운 NavMesh입니다.",
+   "vague": "클릭하면 캐릭터 이동하게",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity:initialize-ai-navigation 으로 com.unity.ai.navigation 패키지를 확인하고, 바닥과 장애물을 덮는 NavMeshSurface 를 1개 두어 구운 뒤, 마우스로 클릭한 바닥으로 캐릭터(NavMeshAgent, 속도 5)가 장애물을 피해 가는 스크립트를 만들어 줘.",
+   "script": "NavMeshDemo.cs",
+   "dim": "3D 길찾기",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0404_NavMesh",
+   "scenePath": "Assets/00_Scenes/0404_NavMesh.unity",
+   "shows": "0404_NavMesh 씬에서 바닥을 클릭해 에이전트를 보내 보고, A(NavMesh 없음 → 경고 후 멈춤)와 B(NavMeshSurface로 구움 → 하늘색 NavMesh 위로 장애물을 돌아감)를 비교한다.",
+   "lab": {
+    "scene": "0404_NavMesh"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0501",
+   "cat": 5,
+   "sub": "나만의 스킬 만들기",
+   "term": "SKILL.md 구조",
+   "easy": "이름 · 설명 + 본문, 필요하면 자료 폴더",
+   "concept": "SKILL.md는 맨 위 --- 두 줄 사이에 YAML(이름표 칸)로 name과 description을 적고, 그 아래에 지시 본문을 적는 글 파일이에요. AI는 처음엔 name·description만 읽고, 요청과 맞으면 본문을 읽어요. 더 긴 자료는 references/, 실행할 코드는 scripts/, 쓸 파일은 assets/ 폴더에 따로 둬요.",
+   "labView": "0501_ClassRules 씬의 'SKILL.md 보기' 탭에서 이 저장소의 실제 스킬 파일 .claude/skills/class-rules/SKILL.md 를 열어, 초록 칸(YAML)과 본문을 나눠 본다.",
+   "controls": "← / → : 탭 바꾸기 (SKILL.md 보기 · A 결과 코드 · B 결과 코드 · 실행 결과)\n마우스 : 탭 누르기 · 휠로 내용 내리기\n1 / 2 / Tab : A ↔ B (코드 탭과 실행 결과가 그쪽으로 바뀜)\nSpace : (실행 결과 탭) 점수 +10",
+   "tryThis": [
+    "'SKILL.md 보기' 탭에서 초록 칸의 name과 description을 소리 내어 읽는다.",
+    "휠로 내려 본문의 규칙 제목 7개(폴더 · 이름 · 숫자 · 주석 · 로그 · 부품 찾기 · UI)를 훑는다.",
+    "이 스킬에 references/·scripts/ 폴더가 없는 대신 본문에 무엇이 들어 있는지(규칙·마무리 확인) 말해 본다."
+   ],
+   "check": "맨 위 --- 두 줄 사이가 YAML입니다. name은 폴더 이름(class-rules)과 같고, description에 언제 쓰는지가 들어 있습니다.",
+   "vague": "스킬 파일 하나 만들어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 우리 반 코드 규칙을 .claude/skills/class-rules/SKILL.md 로 만들려고 해. 맨 위 YAML에 name(class-rules)과 언제 쓰는지 드러나는 description을 쓰고, 본문에 규칙 7가지와 마무리 확인 목록을 넣은 한국어 SKILL.md 를 만들어 줘.",
+   "script": "ClassRulesDemo.cs, .claude/skills/class-rules/SKILL.md",
+   "dim": "스킬 파일",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0501_ClassRules",
+   "scenePath": "Assets/00_Scenes/0501_ClassRules.unity",
+   "shows": "0501_ClassRules 씬의 'SKILL.md 보기' 탭에서 이 저장소의 실제 스킬 파일 .claude/skills/class-rules/SKILL.md 를 열어, 초록 칸(YAML)과 본문을 나눠 본다.",
+   "lab": {
+    "scene": "0501_ClassRules"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0502",
+   "cat": 5,
+   "sub": "나만의 스킬 만들기",
+   "term": "프로젝트 스킬 자리",
+   "easy": "Claude는 .claude/skills, Codex는 .agents/skills",
+   "concept": "저장소 안에 스킬을 두면 그 저장소를 쓰는 사람 모두가 같은 스킬을 써요(프로젝트 스킬). Claude Code는 .claude/skills/<이름>/SKILL.md, Codex는 .agents/skills/<이름>/SKILL.md 자리에서 찾아요. 나만 쓰는 개인 스킬은 ~/.claude/skills, Codex는 ~/.agents/skills 에 둬요.",
+   "labView": "0501_ClassRules 씬의 'SKILL.md 보기' 탭 위쪽 경로 줄에서 같은 파일이 .claude/skills 와 .agents/skills 두 자리에 있는 것을 본다.",
+   "controls": "← / → : 탭 바꾸기 (SKILL.md 보기 · A 결과 코드 · B 결과 코드 · 실행 결과)\n마우스 : 탭 누르기 · 휠로 내용 내리기\n1 / 2 / Tab : A ↔ B (코드 탭과 실행 결과가 그쪽으로 바뀜)\nSpace : (실행 결과 탭) 점수 +10",
+   "tryThis": [
+    "'SKILL.md 보기' 탭 맨 위 노란 경로 줄을 읽는다.",
+    "저장소 폴더에서 .claude/skills/class-rules 와 .agents/skills/class-rules 를 열어 두 파일 내용이 같은지 본다.",
+    "개인 스킬 자리(~/.claude/skills, ~/.agents/skills)와 무엇이 다른지 한 줄로 적는다."
+   ],
+   "check": "두 도구가 찾는 자리가 달라서, Claude Code와 Codex를 같이 쓰는 반이면 같은 SKILL.md를 두 자리에 둡니다(이 저장소처럼).",
+   "vague": "스킬 어디다 넣어?",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 반 친구들 모두가 같은 class-rules 스킬을 쓰게 저장소에 넣으려고 해. Claude Code용 .claude/skills/class-rules/SKILL.md 와 Codex용 .agents/skills/class-rules/SKILL.md 2곳에 같은 내용을 두는 방법과, 개인 스킬 자리와의 차이를 알려줘.",
+   "script": "ClassRulesDemo.cs, .claude/skills/class-rules/SKILL.md, .agents/skills/class-rules/SKILL.md",
+   "dim": "스킬 파일",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0501_ClassRules",
+   "scenePath": "Assets/00_Scenes/0501_ClassRules.unity",
+   "shows": "0501_ClassRules 씬의 'SKILL.md 보기' 탭 위쪽 경로 줄에서 같은 파일이 .claude/skills 와 .agents/skills 두 자리에 있는 것을 본다.",
+   "lab": {
+    "scene": "0501_ClassRules"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0503",
+   "cat": 5,
+   "sub": "나만의 스킬 만들기",
+   "term": "우리 반 규칙 스킬",
+   "easy": "같은 요청도 우리 반 규칙대로 나온다",
+   "concept": "같은 요청 'Space를 누르면 점수가 10 오르는 점수판'도, 규칙이 없으면 오래된 튜토리얼처럼 public 필드·숫자 바로 쓰기·OnGUI·Debug.Log가 섞인 코드가 나오기 쉬워요. 규칙 스킬이 있으면 [SerializeField] 숫자, camelCase 이름, 한글 주석, UI Toolkit처럼 우리 반 모양으로 나와요. 이 씬의 두 코드는 모두 실제로 컴파일되고 실행돼요.",
+   "labView": "0501_ClassRules 씬에서 'A 결과 코드'와 'B 결과 코드' 탭을 번갈아 보고, '실행 결과' 탭에서 Space로 두 코드가 실제로 돌아가는 모습(A: OnGUI 글자, B: UI Toolkit 점수판)을 비교한다.",
+   "controls": "← / → : 탭 바꾸기 (SKILL.md 보기 · A 결과 코드 · B 결과 코드 · 실행 결과)\n마우스 : 탭 누르기 · 휠로 내용 내리기\n1 / 2 / Tab : A ↔ B (코드 탭과 실행 결과가 그쪽으로 바뀜)\nSpace : (실행 결과 탭) 점수 +10",
+   "tryThis": [
+    "'A 결과 코드' 탭에서 public 필드, 숫자 10·100, Update 안의 FindObjectOfType, OnGUI, Debug.Log 를 찾는다.",
+    "'B 결과 코드' 탭에서 같은 기능이 [SerializeField] 와 한글 주석 한 줄로 바뀐 곳을 찾는다.",
+    "'실행 결과' 탭에서 1·2로 바꿔 가며 Space를 눌러 두 점수판을 비교한다."
+   ],
+   "check": "A도 B도 에러 없이 돌아갑니다. 차이는 '동작'이 아니라 우리 반 규칙(폴더·이름·인스펙터 숫자·주석·로그·UI 방식)을 지켰는지입니다. A의 FindObjectOfType 은 Unity 6에서 사용 중단(obsolete) 경고도 남깁니다.",
+   "vague": "점수판 만들어줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. class-rules 스킬을 먼저 읽고, Space를 누르면 점수가 10 오르고 100점이면 '목표 달성!'을 띄우는 점수판을 Assets/01_Scripts/Score/ 에 만들어 줘. 숫자는 [SerializeField], UI는 UI Toolkit으로.",
+   "script": "ClassRulesDemo.cs, ScoreManagerA.cs, ScoreCounterB.cs, ScorePop.cs",
+   "dim": "C# 코드",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0501_ClassRules",
+   "scenePath": "Assets/00_Scenes/0501_ClassRules.unity",
+   "shows": "0501_ClassRules 씬에서 'A 결과 코드'와 'B 결과 코드' 탭을 번갈아 보고, '실행 결과' 탭에서 Space로 두 코드가 실제로 돌아가는 모습(A: OnGUI 글자, B: UI Toolkit 점수판)을 비교한다.",
+   "lab": {
+    "scene": "0501_ClassRules"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0504",
+   "cat": 5,
+   "sub": "나만의 스킬 만들기",
+   "term": "description 잘 쓰기",
+   "easy": "설명이 흐리면 AI가 안 꺼낸다",
+   "concept": "AI는 처음에 스킬의 name과 description만 보고 이번 요청에 쓸지 골라요. 그래서 description에는 '언제 쓰는지'가 낱말로 드러나야 해요(예: C# 스크립트·UI·점수판을 만들거나 고칠 때). '코드 규칙'처럼 흐리게 쓰면 요청과 맞는지 판단할 낱말이 없어 잘 꺼내지 않아요.",
+   "labView": "0501_ClassRules 씬의 'SKILL.md 보기' 탭에서 초록 칸의 description과, 아래 노란 줄의 흐린 설명 예('코드 규칙')를 비교한다.",
+   "controls": "← / → : 탭 바꾸기 (SKILL.md 보기 · A 결과 코드 · B 결과 코드 · 실행 결과)\n마우스 : 탭 누르기 · 휠로 내용 내리기\n1 / 2 / Tab : A ↔ B (코드 탭과 실행 결과가 그쪽으로 바뀜)\nSpace : (실행 결과 탭) 점수 +10",
+   "tryThis": [
+    "초록 칸 description에서 '언제 쓰는지'를 알려 주는 낱말(스크립트·UI·점수판·HUD)을 찾는다.",
+    "아래 노란 줄의 흐린 예 'description: 코드 규칙'과 비교한다.",
+    "내 도구에서 '점수판 만들어줘'라고 했을 때 class-rules 가 자동으로 불리는지 보고, 안 불리면 이름을 직접 불러 본다."
+   ],
+   "check": "description은 사람이 아니라 AI가 스킬을 고를 때 읽는 문장입니다. 요청에 나올 낱말을 넣으면 자동 호출이 잘 됩니다.",
+   "vague": "description 대충 써줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. class-rules 스킬의 description을 고치려고 해. 'C# 스크립트·UI·점수판·HUD를 만들거나 고칠 때'처럼 요청에 나올 낱말이 들어간 한 문장 예시 3개를 쓰고, 흐린 설명('코드 규칙')이 왜 자동 호출이 잘 안 되는지 설명해 줘.",
+   "script": "ClassRulesDemo.cs, .claude/skills/class-rules/SKILL.md",
+   "dim": "스킬 파일",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "0501_ClassRules",
+   "scenePath": "Assets/00_Scenes/0501_ClassRules.unity",
+   "shows": "0501_ClassRules 씬의 'SKILL.md 보기' 탭에서 초록 칸의 description과, 아래 노란 줄의 흐린 설명 예('코드 규칙')를 비교한다.",
+   "lab": {
+    "scene": "0501_ClassRules"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0601",
+   "cat": 6,
+   "sub": "조심할 점",
+   "term": "질문이 많아짐",
+   "easy": "스킬이 있으면 바꾸기 전에 먼저 묻는다",
+   "concept": "Unity 플러그인이 있으면 AI가 무언가를 바꾸기 전에 질문을 더 해요. 예를 들어 /ui 스킬은 프로젝트가 어떤 UI 방식을 쓰는지 먼저 확인해요. 귀찮아 보여도 잘못 만든 뒤 고치는 것보다 빨라요. 요청에 내 환경(Unity 6 URP, UI Toolkit 등)을 먼저 적으면 질문이 줄어요.",
+   "labView": "00_SkillMap 씬에서 사람 ↔ AI 칸과 화살표가 강조되고, 설명 패널에 '바꾸기 전에 묻는다' 예가 나오는 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "지도에서 사람과 AI 칸이 강조된 것을 본다.",
+    "설명 패널에서 /ui 가 먼저 확인하는 것을 읽는다.",
+    "다음 요청 맨 앞에 내 환경 한 줄(Unity 6 URP, UI Toolkit)을 붙여 질문 수가 줄어드는지 본다."
+   ],
+   "check": "AI의 질문은 고장이 아니라 스킬이 일하는 방식입니다. 답할 때는 프로젝트 사실(버전·렌더 파이프라인·UI 방식)로 답합니다.",
+   "vague": "알아서 해, 묻지 마",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. UI는 UI Toolkit만 쓰고 새 uGUI Canvas는 만들지 마. 설정 화면을 만들기 전에 꼭 확인해야 할 것만 3가지 이내로 먼저 물어보고, 내가 답하면 그때 만들어 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 사람 ↔ AI 칸과 화살표가 강조되고, 설명 패널에 '바꾸기 전에 묻는다' 예가 나오는 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0602",
+   "cat": 6,
+   "sub": "조심할 점",
+   "term": "결과가 이상할 때 references",
+   "easy": "\"스킬 references 먼저 읽고 다시\"",
+   "concept": "스킬 폴더의 references(참고 자료)에는 본문에 다 못 넣은 자세한 설명이 들어 있어요. 결과가 이상하면 '스킬의 references 폴더를 먼저 읽고 다시 해 줘'라고 요청해요. UI 요청엔 프레임워크 이름(새 프로젝트는 UI Toolkit)을 넣고, 자동으로 안 불리면 스킬 이름을 직접 불러요. 다만 단순한 uGUI 작업은 스킬이 있어도 차이가 작아요.",
+   "labView": "00_SkillMap 씬에서 스킬 한 권 폴더 안의 references/ 칩이 강조되고, 설명 패널에 다시 요청하는 문장이 나오는 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "지도에서 references/ 칩이 노랗게 된 것을 찾는다.",
+    "설명 패널의 '다시 요청' 문장을 그대로 메모한다.",
+    "0302 같은 결과가 나오면 '/unity:ui-uitk 스킬의 references 를 먼저 읽고 다시'로 요청해 본다."
+   ],
+   "check": "references는 처음부터 다 읽히지 않습니다. 필요할 때 읽으라고 콕 집어 말하면 결과가 좋아집니다.",
+   "vague": "다시 해줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 방금 만든 UI Toolkit 버튼이 마우스를 뗄 때 툭 돌아가. /unity:ui-uitk 스킬의 references 폴더를 먼저 읽고, transition 을 어디에 선언해야 하는지 확인한 다음 0.4초 전환으로 다시 고쳐 줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 스킬 한 권 폴더 안의 references/ 칩이 강조되고, 설명 패널에 다시 요청하는 문장이 나오는 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0603",
+   "cat": 6,
+   "sub": "조심할 점",
+   "term": "남이 만든 스킬 조심",
+   "easy": "scripts는 내 PC에서 실행된다",
+   "concept": "스킬 폴더의 scripts(실행할 코드)는 AI가 내 PC에서 실행할 수 있어요. 그래서 남이 만든 스킬은 받기 전에 SKILL.md와 scripts/를 직접 열어 무엇을 하는지 읽어 봐야 해요. 출처를 아는 곳(예: Unity-Technologies/unity-agent-plugin)에서 받는 것이 안전해요.",
+   "labView": "00_SkillMap 씬에서 스킬 폴더의 scripts/ 칩과 사람(내 PC) 칸이 함께 강조된 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "지도에서 scripts/ 칩과 사람 칸이 같이 강조된 이유를 말해 본다.",
+    "이 저장소의 .claude/skills/class-rules 폴더를 열어 scripts/ 가 없는 것을 확인한다.",
+    "남에게 받은 스킬이라면 SKILL.md와 scripts/ 안 파일을 먼저 읽는 순서를 정한다."
+   ],
+   "check": "스킬은 글처럼 보여도 scripts/ 가 있으면 실행 파일을 함께 가져오는 것입니다.",
+   "vague": "이 스킬 깔아줘",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 인터넷에서 받은 스킬 폴더를 .claude/skills/ 에 넣기 전에 검사하고 싶어. SKILL.md와 scripts/ 안 파일을 실행하지 말고 읽기만 해서, 파일 삭제·네트워크 전송·설치 명령 같은 위험한 동작이 있는지 3가지 기준으로 알려줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 스킬 폴더의 scripts/ 칩과 사람(내 PC) 칸이 함께 강조된 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  },
+  {
+   "id": "0604",
+   "cat": 6,
+   "sub": "조심할 점",
+   "term": "버전 조건",
+   "easy": "Unity 6 이상, 에디터 조종은 CLI + Pipeline + 에디터 열림",
+   "concept": "Unity 공식 플러그인은 Unity 6.0 이상에서 써요. 에디터를 직접 조종하는 스킬은 조건이 세 가지 더 있어요: Unity CLI 설치, 프로젝트에 Pipeline 패키지(unity pipeline install), 그리고 에디터가 열려 있을 것. 연결은 unity status 로, 문제는 unity doctor 로 확인해요.",
+   "labView": "00_SkillMap 씬에서 Unity CLI 칸과 Unity 에디터 칸, 그 사이 화살표가 강조되고 설명 패널에 조건 세 가지가 나오는 것을 본다.",
+   "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
+   "tryThis": [
+    "설명 패널의 조건 세 가지(CLI · Pipeline · 에디터 열림)를 손가락으로 짚는다.",
+    "CLI가 설치된 PC라면 unity status 를 실행해 연결 상태를 본다.",
+    "에디터를 닫은 상태와 연 상태에서 같은 확인을 해 차이를 본다."
+   ],
+   "check": "Unity 6 미만이거나 세 조건 중 하나라도 빠지면, 스킬은 설명은 해도 에디터를 직접 움직이지는 못합니다.",
+   "vague": "왜 에디터를 못 만져?",
+   "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 에디터 조종 스킬이 동작하지 않아. Unity CLI 설치, unity pipeline install, 에디터 열림 3가지 조건을 unity status 와 unity doctor 로 하나씩 확인하는 순서를 알려줘.",
+   "script": "SkillMapView.cs",
+   "dim": "개념 지도",
+   "mode": "AI 스킬 랩 시연",
+   "scene": "00_SkillMap",
+   "scenePath": "Assets/00_Scenes/00_SkillMap.unity",
+   "shows": "00_SkillMap 씬에서 Unity CLI 칸과 Unity 에디터 칸, 그 사이 화살표가 강조되고 설명 패널에 조건 세 가지가 나오는 것을 본다.",
+   "lab": {
+    "scene": "00_SkillMap"
+   },
+   "notion": ""
+  }
+ ]
+}

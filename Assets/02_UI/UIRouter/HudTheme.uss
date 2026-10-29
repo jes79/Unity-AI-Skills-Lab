@@ -1,0 +1,99 @@
+/* 0301 게임 HUD 테마 (UI Toolkit). HUD 와 B 의 설정 화면이 같이 쓴다 */
+
+.hud-bar {
+    position: absolute;
+    left: 150px;
+    top: 260px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: rgba(20, 26, 40, 0.92);
+    border-width: 2px;
+    border-color: rgb(90, 140, 255);
+    border-radius: 14px;
+}
+
+.hud-stat {
+    font-size: 28px;
+    color: rgb(235, 240, 250);
+    margin-right: 28px;
+    -unity-font-style: bold;
+}
+
+.hud-stat--hp {
+    color: rgb(255, 120, 120);
+}
+
+.hud-stat--gold {
+    color: rgb(255, 210, 90);
+}
+
+.hud-button {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 140, 255);
+    border-width: 0;
+    border-radius: 10px;
+    padding: 6px 18px;
+    margin: 0;
+}
+
+.hud-button:hover {
+    background-color: rgb(120, 165, 255);
+}
+
+.hud-window {
+    position: absolute;
+    left: 375px;
+    top: 370px;
+    width: 600px;
+    padding: 20px 28px 24px 28px;
+    background-color: rgba(20, 26, 40, 0.96);
+    border-width: 2px;
+    border-color: rgb(90, 140, 255);
+    border-radius: 14px;
+}
+
+.hud-title {
+    font-size: 34px;
+    color: rgb(235, 240, 250);
+    -unity-font-style: bold;
+    margin-bottom: 14px;
+}
+
+.hud-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.hud-label {
+    width: 150px;
+    font-size: 24px;
+    color: rgb(200, 210, 230);
+}
+
+.hud-row .unity-slider {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.hud-row .unity-toggle {
+    margin: 0;
+}
+
+.hud-row .unity-base-slider__tracker {
+    background-color: rgb(50, 60, 85);
+    border-color: rgb(50, 60, 85);
+}
+
+.hud-row .unity-base-slider__dragger {
+    background-color: rgb(90, 140, 255);
+    border-color: rgb(90, 140, 255);
+    border-radius: 8px;
+}
+
+.hud-window .hud-button {
+    align-self: flex-end;
+    margin-top: 6px;
+}
