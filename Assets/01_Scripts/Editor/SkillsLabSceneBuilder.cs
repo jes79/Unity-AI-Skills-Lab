@@ -464,7 +464,7 @@ public static class SkillsLabSceneBuilder
         Kit.SetBanner(demo, "0402 · 빠른 총알이 벽을 뚫음", "/physics-3d-collision",
             "총알이 벽에 맞으면 멈추게 해줘",
             "Collision Detection = Discrete(기본값): 0.02초마다 위치만 검사 → 한 번에 벽 두께보다 멀리 가면 벽을 건너뛴다",
-            "Collision Detection = Continuous Dynamic: 지나온 길 전체를 검사(연속 충돌) → 빨라도 벽에 맞는다");
+            "Collision Detection = Continuous Dynamic: 지나온 길을 검사(연속 충돌) → 이 데모 속도(최대 250 m/s)에서는 벽을 놓치지 않는다 (실제 게임은 크기·속도·물리 설정에 따라 확인 필요)");
         Kit.Set(demo, "bulletTemplate", fastBullet);
         Kit.Set(demo, "muzzle", muzzle);
         Kit.Set(demo, "wall", wall.transform);

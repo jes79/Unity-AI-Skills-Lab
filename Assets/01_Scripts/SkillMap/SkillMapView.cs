@@ -58,10 +58,11 @@ public class SkillMapView : MonoBehaviour
                 "스킬 = 폴더 하나. 그 안의 SKILL.md 맨 위에 YAML(name · description), 아래에 본문 지시",
                 "선택: references/ · scripts/ · assets/ 폴더를 같이 둘 수 있다",
                 "AI는 처음엔 이름·설명만 읽고, 필요할 때 본문을 읽는다")),
-        new View("0102", "플러그인 (Plugin) — 스킬 여러 권 + 도구를 한 상자에",
+        new View("0102", "플러그인 (Plugin) — Unity 스킬(설명서) 30여 권을 한 번에 꽂는 상자",
             new Step(new[] { "plugin", "plugin.books" },
-                "Unity 공식 플러그인 (Unity Technologies) · github.com/Unity-Technologies/unity-agent-plugin",
+                "Unity 공식 플러그인 (Unity Technologies) · github.com/Unity-Technologies/unity-agent-plugin = 스킬 묶음",
                 "Claude Code용 29개 스킬(2026-09-09 발표) · Codex용 31개(2026-09-16) → 지금은 '30+ 스킬'",
+                "Unity CLI 프로그램은 따로 설치한다. 에디터 조종에는 CLI · Pipeline 패키지 · 열린 에디터가 추가로 필요",
                 "Unity 6.0 이상. Asset Store / Package Manager 패키지가 아니다")),
         new View("0103", "Unity CLI — 터미널에서 Unity를 움직이는 '손'",
             new Step(new[] { "cli", "editor", "arrow.cli-editor", "arrow.ai-cli" },
@@ -124,7 +125,7 @@ public class SkillMapView : MonoBehaviour
             new Step(new[] { "plugin", "plugin.book", "chip.scripts", "person" },
                 "스킬 폴더의 scripts/ 는 AI가 내 PC에서 실행할 수 있는 코드다",
                 "받기 전에 SKILL.md 와 scripts/ 를 직접 열어 읽어 본다",
-                "출처를 아는 곳(예: Unity-Technologies/unity-agent-plugin)에서 받는다")),
+                "출처를 아는 곳(예: Unity-Technologies/unity-agent-plugin)에서 받되, 공식 저장소라도 설치 전에 직접 읽는다 (공식 ≠ 무조건 안전)")),
         new View("0604", "버전 조건 — Unity 6 이상, 에디터 조종은 CLI + Pipeline + 에디터 열림",
             new Step(new[] { "editor", "cli", "arrow.cli-editor" },
                 "플러그인: Unity 6.0 이상",
@@ -297,6 +298,10 @@ public class SkillMapView : MonoBehaviour
         Chip(book, "chip.references", "references/", 15f, new Color32(70, 80, 110, 255));
         Chip(book, "chip.scripts", "scripts/", 15f, new Color32(120, 70, 70, 255));
         Chip(book, null, "assets/", 15f, new Color32(70, 80, 110, 255));
+
+        // /unity-cli 는 CLI 프로그램이 아니라 'CLI 쓰는 법'을 적은 스킬
+        var cliNote = Text(node, "/unity-cli = CLI 쓰는 법을 담은 스킬 · CLI 프로그램은 따로 설치", 15f, new Color(0.95f, 0.88f, 0.6f));
+        cliNote.style.marginTop = 6f;
     }
 
     void BuildBox(VisualElement root, string key, string title, string body, float titleSize = 24f)

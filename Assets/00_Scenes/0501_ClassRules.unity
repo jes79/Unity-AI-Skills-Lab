@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &109074286
+--- !u!1 &448919681
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,177 +127,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 109074290}
-  - component: {fileID: 109074289}
-  - component: {fileID: 109074288}
-  - component: {fileID: 109074287}
+  - component: {fileID: 448919683}
+  - component: {fileID: 448919682}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Run_A_ScoreManagerA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &109074287
+--- !u!114 &448919682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109074286}
-  m_Enabled: 1
+  m_GameObject: {fileID: 448919681}
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe6b76072347b74baa886a00d99a800, type: 3}
+  m_Script: {fileID: 11500000, guid: a91ec1338570c264e9531bf6b2163b02, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScorePop
-  jumpHeight: 0.8
-  duration: 0.35
-  spinSpeed: 120
---- !u!23 &109074288
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109074286}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a3f66d44166d4114f82f56fc524de6db, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &109074289
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109074286}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &109074290
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreManagerA
+  Score: 0
+  Pop: {fileID: 2126988180}
+--- !u!4 &448919683
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109074286}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.2, y: -0.6, z: 0}
-  m_LocalScale: {x: 1.4, y: 0.1, z: 1.4}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &292157832
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 292157835}
-  - component: {fileID: 292157833}
-  - component: {fileID: 292157834}
-  m_Layer: 0
-  m_Name: UI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &292157833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292157832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
-  m_PanelSettings: {fileID: 11400000, guid: 6f75d67c62ccfbd48b39eebe40295a0d, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 0}
-  m_SortingOrder: 0
-  m_Position: 0
-  m_WorldSpaceSizeMode: 1
-  m_WorldSpaceWidth: 1920
-  m_WorldSpaceHeight: 1080
-  m_PivotReferenceSize: 0
-  m_Pivot: 0
-  m_WorldSpaceCollider: {fileID: 0}
---- !u!114 &292157834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292157832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc16f8b848960b468b8c856d5992849, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClassRulesDemo
-  sceneTitle: "0501 \xB7 \uC6B0\uB9AC \uBC18 \uADDC\uCE59 \uC2A4\uD0AC (class-rules)"
-  skillName: "class-rules (\uC774 \uC800\uC7A5\uC18C\uC758 \uD504\uB85C\uC81D\uD2B8 \uC2A4\uD0AC)"
-  request: "Space \uB97C \uB204\uB974\uBA74 \uC810\uC218\uAC00 10 \uC624\uB974\uB294 \uC810\uC218\uD310 \uB9CC\uB4E4\uC5B4\uC918"
-  causeA: "\uADDC\uCE59 \uC2A4\uD0AC \uC5C6\uC774: public \uD544\uB4DC \xB7 \uC22B\uC790\uB97C \uCF54\uB4DC\uC5D0 \uBC14\uB85C \xB7 Update \uB9C8\uB2E4 FindObjectOfType \xB7 OnGUI \xB7 Debug.Log \uB97C \uB0A8\uAE40"
-  causeB: "class-rules \uC2A4\uD0AC\uB300\uB85C: \uC22B\uC790\uB294 [SerializeField] \xB7 \uD544\uB4DC camelCase \xB7 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904 \xB7 Debug.Log \uC5C6\uC74C \xB7 \uC0C8 UI \uB294 UI Toolkit"
-  startWithSkill: 0
-  skillFrontMatter: "---\nname: class-rules\ndescription: \uC6B0\uB9AC \uBC18 Unity \uCF54\uB4DC \uADDC\uCE59. \uC774 \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C C# \uC2A4\uD06C\uB9BD\uD2B8(MonoBehaviour)\xB7\uAC8C\uC784 UI\xB7\uC810\uC218\uD310\xB7HUD \uB97C \uC0C8\uB85C \uB9CC\uB4E4\uAC70\uB098 \uACE0\uCE60 \uB54C \uC0AC\uC6A9\uD55C\uB2E4. \uC2A4\uD06C\uB9BD\uD2B8 \uD3F4\uB354, \uD074\uB798\uC2A4\xB7\uD544\uB4DC \uC774\uB984, \uC778\uC2A4\uD399\uD130 \uC22B\uC790([SerializeField]), \uD55C\uAE00 \uC8FC\uC11D, Debug.Log \uAE08\uC9C0, \uC0C8 UI \uB294 UI Toolkit \uADDC\uCE59\uC744 \uC801\uC6A9\uD55C\uB2E4.\n---"
-  skillBody: "# \uC6B0\uB9AC \uBC18 \uADDC\uCE59 (class-rules)\n\n\uC774 \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C Unity \uC2A4\uD06C\uB9BD\uD2B8\uB098 UI \uB97C \uB9CC\uB4E4 \uB54C\uB294 \uC544\uB798 \uADDC\uCE59\uC744 \uC9C0\uD0A8\uB2E4.\n\uADDC\uCE59\uACFC \uB2E4\uB978 \uC694\uCCAD\uC744 \uBC1B\uC73C\uBA74, \uBC14\uAFB8\uAE30 \uC804\uC5D0 \uBA3C\uC800 \uBB3C\uC5B4\uBCF8\uB2E4.\n\n## 1. \uD3F4\uB354\n\n- \uC2A4\uD06C\uB9BD\uD2B8\uB294 `Assets/01_Scripts/<\uAE30\uB2A5>/` \uC5D0 \uB454\uB2E4. \uC608: \uC810\uC218\uD310 \u2192 `Assets/01_Scripts/Score/ScoreCounter.cs`\n- UI \uD30C\uC77C(UXML \xB7 USS)\uC740 `Assets/02_UI/<\uAE30\uB2A5>/` \uC5D0 \uB454\uB2E4.\n\n## 2. \uC774\uB984\n\n- \uD074\uB798\uC2A4 \xB7 \uD30C\uC77C \uC774\uB984\uC740 PascalCase. \uD30C\uC77C \uC774\uB984 = \uD074\uB798\uC2A4 \uC774\uB984.\n- \uD544\uB4DC \xB7 \uC9C0\uC5ED \uBCC0\uC218\uB294 camelCase. \uC608: `currentScore`, `pointsPerPress`\n- \uD544\uB4DC\uB294 `public` \uC73C\uB85C \uC5F4\uC9C0 \uC54A\uB294\uB2E4. \uC778\uC2A4\uD399\uD130\uC5D0 \uBCF4\uC5EC\uC57C \uD558\uBA74 `[SerializeField]` private \uD544\uB4DC\uB85C \uB454\uB2E4.\n\n## 3. \uC22B\uC790\uB294 \uC778\uC2A4\uD399\uD130\uB85C\n\n- \uC810\uC218, \uC18D\uB3C4, \uC2DC\uAC04\uCC98\uB7FC \uBC14\uAFD4 \uBCFC \uB9CC\uD55C \uC22B\uC790\uB294 \uCF54\uB4DC \uC548\uC5D0 \uBC14\uB85C \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n- `[SerializeField] int pointsPerPress = 10;` \uCC98\uB7FC \uD544\uB4DC\uB85C \uAEBC\uB0B4\uC11C \uC778\uC2A4\uD399\uD130\uC5D0\uC11C \uACE0\uCE60 \uC218 \uC788\uAC8C \uD55C\uB2E4.\n- UI \uC758 \uC704\uCE58 \xB7 \uD06C\uAE30 \xB7 \uC0C9\uC740 C# \uB300\uC2E0 USS \uC5D0 \uC4F4\uB2E4.\n\n## 4. \uC8FC\uC11D\n\n- \uD074\uB798\uC2A4 \uC704\uC5D0 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904\uB85C \"\uC774 \uC2A4\uD06C\uB9BD\uD2B8\uAC00 \uD558\uB294 \uC77C\"\uC744 \uC4F4\uB2E4.\n- \uCF54\uB4DC\uB97C \uADF8\uB300\uB85C \uC77D\uC5B4 \uC8FC\uB294 \uC8FC\uC11D\uC740 \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n\n## 5. \uB85C\uADF8\n\n- `Debug.Log` \uB97C \uB0A8\uAE30\uC9C0 \uC54A\uB294\uB2E4. \uD655\uC778\uC6A9\uC73C\uB85C \uB123\uC740 \uB85C\uADF8\uB294 \uC791\uC5C5\uC774 \uB05D\uB098\uAE30 \uC804\uC5D0 \uC9C0\uC6B4\uB2E4.\n\n## 6. \uB2E4\uB978 \uBD80\uD488 \uCC3E\uAE30\n\n- `Update` \uC548\uC5D0\uC11C `FindObjectOfType` \xB7 `GameObject.Find` \uB97C \uBD80\uB974\uC9C0 \uC54A\uB294\uB2E4.\n- \uD544\uC694\uD55C \uBD80\uD488\uC740 `[SerializeField]` \uB85C \uBC1B\uC544 \uC778\uC2A4\uD399\uD130\uC5D0\uC11C \uC5F0\uACB0\uD55C\uB2E4.\n\n## 7. UI\n\n- \uC0C8 UI \uB294 UI Toolkit(UXML \xB7 USS + `UIDocument`)\uC73C\uB85C \uB9CC\uB4E0\uB2E4. `OnGUI` \uC640 \uC0C8 uGUI Canvas \uB294 \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n- \uC774\uBBF8 \uC788\uB294 UI \uC758 USS \uD14C\uB9C8\uB97C \uAC19\uC774 \uC4F4\uB2E4.\n\n## \uB9C8\uBB34\uB9AC \uD655\uC778\n\n\uC791\uC5C5\uC774 \uB05D\uB098\uBA74 \uC544\uB798\uB97C \uC2A4\uC2A4\uB85C \uD655\uC778\uD558\uACE0 \uACB0\uACFC\uC5D0 \uC801\uB294\uB2E4.\n\n- [ ] \uD30C\uC77C\uC774 `Assets/01_Scripts/<\uAE30\uB2A5>/` \uC5D0 \uC788\uB2E4\n- [ ] public \uD544\uB4DC \uC5C6\uC74C, \uC22B\uC790\uB294 `[SerializeField]`\n- [ ] \uD074\uB798\uC2A4 \uC704 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904\n- [ ] `Debug.Log` \uC5C6\uC74C, `Update` \uC5D0\uC11C Find \uC5C6\uC74C\n- [ ] UI \uB294 UI Toolkit\n- [ ] \uC5D0\uB514\uD130\uC5D0\uC11C \uC0AC\uB78C\uC774 \uC9C1\uC811 \uC5F0\uACB0\uD574\uC57C \uD558\uB294 \uAC83(\uC778\uC2A4\uD399\uD130 \uD544\uB4DC \uB4F1)\uC744 \uB530\uB85C \uC801\uC5C8\uB2E4"
-  codeA: "using UnityEngine;\nusing UnityEngine.InputSystem;\n\n// A \xB7 rules skill not used (reproduced): a typical \"score manager\" from old tutorials\npublic class ScoreManagerA : MonoBehaviour\n{\n    public int Score;\n    public ScorePop Pop;\n\n    void Update()\n    {\n        // find the coin every frame\n        Pop = FindObjectOfType<ScorePop>();\n\n        if (Keyboard.current.spaceKey.wasPressedThisFrame)\n        {\n            Score += 10;\n            Debug.Log(\"Score: \" + Score);\n            Pop.Play();\n\n            if (Score >= 100)\n            {\n                Debug.Log(\"Clear!\");\n            }\n        }\n    }\n\n    void OnGUI()\n    {\n        GUI.skin.label.fontSize = 40;\n        GUI.Label(new Rect(160, 300, 600, 60), \"Score: \" + Score);\n        if (Score >= 100)\n        {\n            GUI.Label(new Rect(160, 360, 600, 60), \"Clear!\");\n        }\n    }\n}"
-  codeB: "using UnityEngine;\nusing UnityEngine.InputSystem;\nusing UnityEngine.UIElements;\n\n// Space \uB97C \uB204\uB97C \uB54C\uB9C8\uB2E4 \uC810\uC218\uB97C \uC62C\uB9AC\uACE0 UI Toolkit \uAE00\uC790\uB85C \uBCF4\uC5EC \uC8FC\uB294 \uC810\uC218\uD310\npublic class ScoreCounterB : MonoBehaviour\n{\n    [SerializeField] UIDocument scoreDocument;\n    [SerializeField] StyleSheet scoreStyle;\n    [SerializeField] ScorePop coinPop;\n    [SerializeField] int pointsPerPress = 10;\n    [SerializeField] int goalScore = 100;\n\n    int currentScore;\n    Label scoreLabel;\n\n    void OnEnable()\n    {\n        scoreLabel = new Label();\n        scoreLabel.AddToClassList(\"score-label\");\n        scoreDocument.rootVisualElement.styleSheets.Add(scoreStyle);\n        scoreDocument.rootVisualElement.Add(scoreLabel);\n        RefreshLabel();\n    }\n\n    void OnDisable()\n    {\n        scoreLabel?.RemoveFromHierarchy();\n    }\n\n    void Update()\n    {\n        if (Keyboard.current == null || !Keyboard.current.spaceKey.wasPressedThisFrame) return;\n\n        currentScore += pointsPerPress;\n        coinPop.Play();\n        RefreshLabel();\n    }\n\n    void RefreshLabel()\n    {\n        scoreLabel.text = currentScore >= goalScore\n            ? $\"\uC810\uC218 {currentScore}  \xB7  \uBAA9\uD45C \uB2EC\uC131!\"\n            : $\"\uC810\uC218 {currentScore} / {goalScore}\";\n    }\n}"
-  runnerA: {fileID: 1141473243}
-  runnerB: {fileID: 1001273710}
-  coin: {fileID: 109074286}
---- !u!4 &292157835
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292157832}
+  m_GameObject: {fileID: 448919681}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -306,7 +165,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &489436729
+--- !u!1 &800516654
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,9 +173,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 489436732}
-  - component: {fileID: 489436731}
-  - component: {fileID: 489436730}
+  - component: {fileID: 800516657}
+  - component: {fileID: 800516656}
+  - component: {fileID: 800516655}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -324,13 +183,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &489436730
+--- !u!114 &800516655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489436729}
+  m_GameObject: {fileID: 800516654}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
@@ -368,13 +227,13 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!20 &489436731
+--- !u!20 &800516656
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489436729}
+  m_GameObject: {fileID: 800516654}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -419,13 +278,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &489436732
+--- !u!4 &800516657
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489436729}
+  m_GameObject: {fileID: 800516654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -434,7 +293,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1001273709
+--- !u!1 &871668712
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,8 +301,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1001273711}
-  - component: {fileID: 1001273710}
+  - component: {fileID: 871668714}
+  - component: {fileID: 871668713}
   m_Layer: 0
   m_Name: Run_B_ScoreCounterB
   m_TagString: Untagged
@@ -451,30 +310,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1001273710
+--- !u!114 &871668713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001273709}
+  m_GameObject: {fileID: 871668712}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 900135a21d9dbf64faaf0cf088bf8dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreCounterB
-  scoreDocument: {fileID: 292157833}
+  scoreDocument: {fileID: 1819799339}
   scoreStyle: {fileID: 7433441132597879392, guid: 7e46427824a1ced4087d2003d7f39ab0, type: 3}
-  coinPop: {fileID: 109074287}
+  coinPop: {fileID: 2126988180}
   pointsPerPress: 10
   goalScore: 100
---- !u!4 &1001273711
+--- !u!4 &871668714
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001273709}
+  m_GameObject: {fileID: 871668712}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -483,7 +342,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1129788002
+--- !u!1 &1778105464
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,8 +350,168 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1129788004}
-  - component: {fileID: 1129788003}
+  - component: {fileID: 1778105467}
+  - component: {fileID: 1778105466}
+  - component: {fileID: 1778105465}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1778105465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778105464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1778105466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778105464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1778105467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778105464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1819799338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819799341}
+  - component: {fileID: 1819799339}
+  - component: {fileID: 1819799340}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1819799339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819799338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 6f75d67c62ccfbd48b39eebe40295a0d, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 0}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &1819799340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819799338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc16f8b848960b468b8c856d5992849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClassRulesDemo
+  sceneTitle: "0501 \xB7 \uC6B0\uB9AC \uBC18 \uADDC\uCE59 \uC2A4\uD0AC (class-rules)"
+  skillName: "class-rules (\uC774 \uC800\uC7A5\uC18C\uC758 \uD504\uB85C\uC81D\uD2B8 \uC2A4\uD0AC)"
+  request: "Space \uB97C \uB204\uB974\uBA74 \uC810\uC218\uAC00 10 \uC624\uB974\uB294 \uC810\uC218\uD310 \uB9CC\uB4E4\uC5B4\uC918"
+  causeA: "\uADDC\uCE59 \uC2A4\uD0AC \uC5C6\uC774: public \uD544\uB4DC \xB7 \uC22B\uC790\uB97C \uCF54\uB4DC\uC5D0 \uBC14\uB85C \xB7 Update \uB9C8\uB2E4 FindObjectOfType \xB7 OnGUI \xB7 Debug.Log \uB97C \uB0A8\uAE40"
+  causeB: "class-rules \uC2A4\uD0AC\uB300\uB85C: \uC22B\uC790\uB294 [SerializeField] \xB7 \uD544\uB4DC camelCase \xB7 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904 \xB7 Debug.Log \uC5C6\uC74C \xB7 \uC0C8 UI \uB294 UI Toolkit"
+  startWithSkill: 0
+  skillFrontMatter: "---\nname: class-rules\ndescription: \uC6B0\uB9AC \uBC18 Unity \uCF54\uB4DC \uADDC\uCE59. \uC774 \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C C# \uC2A4\uD06C\uB9BD\uD2B8(MonoBehaviour)\xB7\uAC8C\uC784 UI\xB7\uC810\uC218\uD310\xB7HUD \uB97C \uC0C8\uB85C \uB9CC\uB4E4\uAC70\uB098 \uACE0\uCE60 \uB54C \uC0AC\uC6A9\uD55C\uB2E4. \uC2A4\uD06C\uB9BD\uD2B8 \uD3F4\uB354, \uD074\uB798\uC2A4\xB7\uD544\uB4DC \uC774\uB984, \uC778\uC2A4\uD399\uD130 \uC22B\uC790([SerializeField]), \uD55C\uAE00 \uC8FC\uC11D, Debug.Log \uAE08\uC9C0, \uC0C8 UI \uB294 UI Toolkit \uADDC\uCE59\uC744 \uC801\uC6A9\uD55C\uB2E4.\n---"
+  skillBody: "# \uC6B0\uB9AC \uBC18 \uADDC\uCE59 (class-rules)\n\n\uC774 \uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C Unity \uC2A4\uD06C\uB9BD\uD2B8\uB098 UI \uB97C \uB9CC\uB4E4 \uB54C\uB294 \uC544\uB798 \uADDC\uCE59\uC744 \uC9C0\uD0A8\uB2E4.\n\uADDC\uCE59\uACFC \uB2E4\uB978 \uC694\uCCAD\uC744 \uBC1B\uC73C\uBA74, \uBC14\uAFB8\uAE30 \uC804\uC5D0 \uBA3C\uC800 \uBB3C\uC5B4\uBCF8\uB2E4.\n\n## 1. \uD3F4\uB354\n\n- \uC2A4\uD06C\uB9BD\uD2B8\uB294 `Assets/01_Scripts/<\uAE30\uB2A5>/` \uC5D0 \uB454\uB2E4. \uC608: \uC810\uC218\uD310 \u2192 `Assets/01_Scripts/Score/ScoreCounter.cs`\n- UI \uD30C\uC77C(UXML \xB7 USS)\uC740 `Assets/02_UI/<\uAE30\uB2A5>/` \uC5D0 \uB454\uB2E4.\n\n## 2. \uC774\uB984\n\n- \uD074\uB798\uC2A4 \xB7 \uD30C\uC77C \uC774\uB984\uC740 PascalCase. \uD30C\uC77C \uC774\uB984 = \uD074\uB798\uC2A4 \uC774\uB984.\n- \uD544\uB4DC \xB7 \uC9C0\uC5ED \uBCC0\uC218\uB294 camelCase. \uC608: `currentScore`, `pointsPerPress`\n- \uD544\uB4DC\uB294 `public` \uC73C\uB85C \uC5F4\uC9C0 \uC54A\uB294\uB2E4. \uC778\uC2A4\uD399\uD130\uC5D0 \uBCF4\uC5EC\uC57C \uD558\uBA74 `[SerializeField]` private \uD544\uB4DC\uB85C \uB454\uB2E4.\n\n## 3. \uC22B\uC790\uB294 \uC778\uC2A4\uD399\uD130\uB85C\n\n- \uC810\uC218, \uC18D\uB3C4, \uC2DC\uAC04\uCC98\uB7FC \uBC14\uAFD4 \uBCFC \uB9CC\uD55C \uC22B\uC790\uB294 \uCF54\uB4DC \uC548\uC5D0 \uBC14\uB85C \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n- `[SerializeField] int pointsPerPress = 10;` \uCC98\uB7FC \uD544\uB4DC\uB85C \uAEBC\uB0B4\uC11C \uC778\uC2A4\uD399\uD130\uC5D0\uC11C \uACE0\uCE60 \uC218 \uC788\uAC8C \uD55C\uB2E4.\n- UI \uC758 \uC704\uCE58 \xB7 \uD06C\uAE30 \xB7 \uC0C9\uC740 C# \uB300\uC2E0 USS \uC5D0 \uC4F4\uB2E4.\n\n## 4. \uC8FC\uC11D\n\n- \uD074\uB798\uC2A4 \uC704\uC5D0 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904\uB85C \"\uC774 \uC2A4\uD06C\uB9BD\uD2B8\uAC00 \uD558\uB294 \uC77C\"\uC744 \uC4F4\uB2E4.\n- \uCF54\uB4DC\uB97C \uADF8\uB300\uB85C \uC77D\uC5B4 \uC8FC\uB294 \uC8FC\uC11D\uC740 \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n\n## 5. \uB85C\uADF8\n\n- `Debug.Log` \uB97C \uB0A8\uAE30\uC9C0 \uC54A\uB294\uB2E4. \uD655\uC778\uC6A9\uC73C\uB85C \uB123\uC740 \uB85C\uADF8\uB294 \uC791\uC5C5\uC774 \uB05D\uB098\uAE30 \uC804\uC5D0 \uC9C0\uC6B4\uB2E4.\n\n## 6. \uB2E4\uB978 \uBD80\uD488 \uCC3E\uAE30\n\n- `Update` \uC548\uC5D0\uC11C `FindObjectOfType` \xB7 `GameObject.Find` \uB97C \uBD80\uB974\uC9C0 \uC54A\uB294\uB2E4.\n- \uD544\uC694\uD55C \uBD80\uD488\uC740 `[SerializeField]` \uB85C \uBC1B\uC544 \uC778\uC2A4\uD399\uD130\uC5D0\uC11C \uC5F0\uACB0\uD55C\uB2E4.\n\n## 7. UI\n\n- \uC0C8 UI \uB294 UI Toolkit(UXML \xB7 USS + `UIDocument`)\uC73C\uB85C \uB9CC\uB4E0\uB2E4. `OnGUI` \uC640 \uC0C8 uGUI Canvas \uB294 \uC4F0\uC9C0 \uC54A\uB294\uB2E4.\n- \uC774\uBBF8 \uC788\uB294 UI \uC758 USS \uD14C\uB9C8\uB97C \uAC19\uC774 \uC4F4\uB2E4.\n\n## \uB9C8\uBB34\uB9AC \uD655\uC778\n\n\uC791\uC5C5\uC774 \uB05D\uB098\uBA74 \uC544\uB798\uB97C \uC2A4\uC2A4\uB85C \uD655\uC778\uD558\uACE0 \uACB0\uACFC\uC5D0 \uC801\uB294\uB2E4.\n\n- [ ] \uD30C\uC77C\uC774 `Assets/01_Scripts/<\uAE30\uB2A5>/` \uC5D0 \uC788\uB2E4\n- [ ] public \uD544\uB4DC \uC5C6\uC74C, \uC22B\uC790\uB294 `[SerializeField]`\n- [ ] \uD074\uB798\uC2A4 \uC704 \uD55C\uAE00 \uC8FC\uC11D \uD55C \uC904\n- [ ] `Debug.Log` \uC5C6\uC74C, `Update` \uC5D0\uC11C Find \uC5C6\uC74C\n- [ ] UI \uB294 UI Toolkit\n- [ ] \uC5D0\uB514\uD130\uC5D0\uC11C \uC0AC\uB78C\uC774 \uC9C1\uC811 \uC5F0\uACB0\uD574\uC57C \uD558\uB294 \uAC83(\uC778\uC2A4\uD399\uD130 \uD544\uB4DC \uB4F1)\uC744 \uB530\uB85C \uC801\uC5C8\uB2E4"
+  codeA: "using UnityEngine;\nusing UnityEngine.InputSystem;\n\n// A \xB7 rules skill not used (reproduced): a typical \"score manager\" from old tutorials\npublic class ScoreManagerA : MonoBehaviour\n{\n    public int Score;\n    public ScorePop Pop;\n\n    void Update()\n    {\n        // find the coin every frame\n        Pop = FindObjectOfType<ScorePop>();\n\n        if (Keyboard.current.spaceKey.wasPressedThisFrame)\n        {\n            Score += 10;\n            Debug.Log(\"Score: \" + Score);\n            Pop.Play();\n\n            if (Score >= 100)\n            {\n                Debug.Log(\"Clear!\");\n            }\n        }\n    }\n\n    void OnGUI()\n    {\n        GUI.skin.label.fontSize = 40;\n        GUI.Label(new Rect(160, 300, 600, 60), \"Score: \" + Score);\n        if (Score >= 100)\n        {\n            GUI.Label(new Rect(160, 360, 600, 60), \"Clear!\");\n        }\n    }\n}"
+  codeB: "using UnityEngine;\nusing UnityEngine.InputSystem;\nusing UnityEngine.UIElements;\n\n// Space \uB97C \uB204\uB97C \uB54C\uB9C8\uB2E4 \uC810\uC218\uB97C \uC62C\uB9AC\uACE0 UI Toolkit \uAE00\uC790\uB85C \uBCF4\uC5EC \uC8FC\uB294 \uC810\uC218\uD310\npublic class ScoreCounterB : MonoBehaviour\n{\n    [SerializeField] UIDocument scoreDocument;\n    [SerializeField] StyleSheet scoreStyle;\n    [SerializeField] ScorePop coinPop;\n    [SerializeField] int pointsPerPress = 10;\n    [SerializeField] int goalScore = 100;\n\n    int currentScore;\n    Label scoreLabel;\n\n    void OnEnable()\n    {\n        scoreLabel = new Label();\n        scoreLabel.AddToClassList(\"score-label\");\n        scoreDocument.rootVisualElement.styleSheets.Add(scoreStyle);\n        scoreDocument.rootVisualElement.Add(scoreLabel);\n        RefreshLabel();\n    }\n\n    void OnDisable()\n    {\n        scoreLabel?.RemoveFromHierarchy();\n    }\n\n    void Update()\n    {\n        if (Keyboard.current == null || !Keyboard.current.spaceKey.wasPressedThisFrame) return;\n\n        currentScore += pointsPerPress;\n        coinPop.Play();\n        RefreshLabel();\n    }\n\n    void RefreshLabel()\n    {\n        scoreLabel.text = currentScore >= goalScore\n            ? $\"\uC810\uC218 {currentScore}  \xB7  \uBAA9\uD45C \uB2EC\uC131!\"\n            : $\"\uC810\uC218 {currentScore} / {goalScore}\";\n    }\n}"
+  runnerA: {fileID: 448919682}
+  runnerB: {fileID: 871668713}
+  coin: {fileID: 2126988179}
+--- !u!4 &1819799341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819799338}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2087404598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087404600}
+  - component: {fileID: 2087404599}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -500,13 +519,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!108 &1129788003
+--- !u!108 &2087404599
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129788002}
+  m_GameObject: {fileID: 2087404598}
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
@@ -565,13 +584,13 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!4 &1129788004
+--- !u!4 &2087404600
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129788002}
+  m_GameObject: {fileID: 2087404598}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.10938166, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -580,7 +599,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1141473242
+--- !u!1 &2126988179
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -588,119 +607,100 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1141473244}
-  - component: {fileID: 1141473243}
+  - component: {fileID: 2126988183}
+  - component: {fileID: 2126988182}
+  - component: {fileID: 2126988181}
+  - component: {fileID: 2126988180}
   m_Layer: 0
-  m_Name: Run_A_ScoreManagerA
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1141473243
+--- !u!114 &2126988180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141473242}
-  m_Enabled: 0
+  m_GameObject: {fileID: 2126988179}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a91ec1338570c264e9531bf6b2163b02, type: 3}
+  m_Script: {fileID: 11500000, guid: afe6b76072347b74baa886a00d99a800, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScoreManagerA
-  Score: 0
-  Pop: {fileID: 109074287}
---- !u!4 &1141473244
+  m_EditorClassIdentifier: Assembly-CSharp::ScorePop
+  jumpHeight: 0.8
+  duration: 0.35
+  spinSpeed: 120
+--- !u!23 &2126988181
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126988179}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a3f66d44166d4114f82f56fc524de6db, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2126988182
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126988179}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2126988183
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141473242}
+  m_GameObject: {fileID: 2126988179}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1286566786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1286566789}
-  - component: {fileID: 1286566788}
-  - component: {fileID: 1286566787}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1286566787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286566786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
---- !u!114 &1286566788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286566786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1286566789
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286566786}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.2, y: -0.6, z: 0}
+  m_LocalScale: {x: 1.4, y: 0.1, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -709,10 +709,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 489436732}
-  - {fileID: 1129788004}
-  - {fileID: 1286566789}
-  - {fileID: 109074290}
-  - {fileID: 292157835}
-  - {fileID: 1141473244}
-  - {fileID: 1001273711}
+  - {fileID: 800516657}
+  - {fileID: 2087404600}
+  - {fileID: 1778105467}
+  - {fileID: 2126988183}
+  - {fileID: 1819799341}
+  - {fileID: 448919683}
+  - {fileID: 871668714}

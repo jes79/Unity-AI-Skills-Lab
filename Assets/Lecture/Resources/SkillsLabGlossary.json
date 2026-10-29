@@ -158,15 +158,15 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381ed8a90d2bc01a935f0"
   },
   {
    "id": "0102",
    "cat": 1,
    "sub": "기본 개념",
    "term": "플러그인 (Plugin)",
-   "easy": "스킬 여러 권 + 도구를 한 상자에 묶은 것",
-   "concept": "플러그인은 스킬 여러 권과 도구를 한 번에 설치하는 상자예요. Unity 공식 플러그인(Unity Technologies의 unity-agent-plugin)은 Claude Code용 29개, Codex용 31개 스킬로 나왔고 지금은 30개가 넘어요. Unity 6.0 이상에서 쓰고, Asset Store나 Package Manager 패키지가 아니라 AI 도구 쪽에 설치해요.",
+   "easy": "Unity 스킬(설명서) 30여 권을 한 번에 꽂는 상자",
+   "concept": "Unity 공식 플러그인(Unity Technologies의 unity-agent-plugin)은 스킬(설명서)을 한 번에 설치하는 스킬 묶음이에요. Claude Code용 29개, Codex용 31개 스킬로 나왔고 지금은 30개가 넘어요. Unity CLI 프로그램은 따로 설치하고, 에디터를 조종하려면 CLI · Pipeline 패키지 · 열린 에디터가 추가로 필요해요. Asset Store나 Package Manager 패키지가 아니라 AI 도구 쪽에 설치하고, Unity 6.0 이상에서 써요.",
    "labView": "00_SkillMap 씬에서 플러그인 상자 전체와 안의 스킬 이름 칩(/ui · /ui-uitk …)이 강조된 것을 본다.",
    "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
    "tryThis": [
@@ -174,7 +174,7 @@
     "설명 패널에서 Claude Code용·Codex용 스킬 수와 발표 날짜(2026-09-09, 2026-09-16)를 확인한다.",
     "상자가 Unity 에디터가 아니라 AI 도구 쪽 화살표에 붙어 있는 것을 확인한다."
    ],
-   "check": "플러그인은 Unity 프로젝트(Packages 폴더)에 들어가는 패키지가 아니라 AI 도구(Claude Code · Codex)에 설치하는 묶음입니다.",
+   "check": "Unity 공식 플러그인은 스킬 묶음입니다. Unity 프로젝트(Packages 폴더)에 들어가는 패키지가 아니라 AI 도구(Claude Code · Codex)에 설치하고, Unity CLI 프로그램은 따로 설치합니다. 에디터 조종에는 CLI · Pipeline 패키지 · 열린 에디터가 추가로 필요합니다.",
    "vague": "Unity 플러그인 깔아줘",
    "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity: 목록에 보이는 스킬 중 UI·그래픽·물리 쪽 스킬 5개를 골라 각각 언제 쓰는지 한 줄씩 알려 주고, 이 플러그인이 Package Manager 패키지와 무엇이 다른지도 적어 줘.",
    "script": "SkillMapView.cs",
@@ -186,7 +186,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43817f85ddfb19ea9baf3e"
   },
   {
    "id": "0103",
@@ -214,7 +214,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381d6a4a5d25cf560d5e8"
   },
   {
    "id": "0104",
@@ -242,7 +242,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381468ff6ccb5b8939b03"
   },
   {
    "id": "0105",
@@ -270,14 +270,14 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef438100b3daf65828e26c32"
   },
   {
    "id": "0201",
    "cat": 2,
    "sub": "설치와 부르기",
    "term": "Claude Code에 설치",
-   "easy": "명령 두 줄로 Unity 설명서 30권 받기",
+   "easy": "명령 두 줄로 Unity 설명서 묶음 받기",
    "concept": "Claude Code 세션 안에서 먼저 마켓플레이스(플러그인 목록)를 추가하고, 그다음 unity 플러그인을 설치해요. 설치 범위(scope)는 user(내 모든 프로젝트), project(저장소를 같이 쓰는 모두), local(나만, 이 저장소만) 중에서 골라요. 전/후 비교 실습은 플러그인을 껐다(disable) 켰다(enable) 하면서 해요.",
    "labView": "00_SkillMap 씬에서 Claude Code 칸이 강조된 채 Space로 설치 명령 ① · ② → 범위 → 전/후 실습(disable/enable) 순서로 설치 패널을 넘겨 본다.",
    "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
@@ -298,7 +298,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381b098fadcbac535b8fa"
   },
   {
    "id": "0202",
@@ -326,7 +326,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43815f99aaece6a9954471"
   },
   {
    "id": "0203",
@@ -354,7 +354,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381068aafc5665d561d4f"
   },
   {
    "id": "0204",
@@ -382,7 +382,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43818a9e91c3f95c0ee765"
   },
   {
    "id": "0301",
@@ -410,7 +410,7 @@
    "lab": {
     "scene": "0301_UIRouter"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381cbb2cbe1e8ec8ea041"
   },
   {
    "id": "0302",
@@ -418,7 +418,7 @@
    "sub": "전/후 비교: UI·2D",
    "term": "버튼 전환이 툭 돌아감 (/ui-uitk)",
    "easy": "전환을 '기본 모양'에 걸어야 갈 때도 부드럽다",
-   "concept": "USS의 transition(전환)은 값이 바뀔 때 몇 초 동안 부드럽게 바꿀지를 정해요. 전환을 :hover(마우스를 올린 상태)에만 적으면, 올릴 땐 전환이 있지만 마우스를 떼어 기본 모양으로 돌아갈 땐 전환이 없어 툭 돌아가요. 전환을 기본 클래스(.lab-button)에 적어야 두 방향 모두 부드러워요.",
+   "concept": "USS(UI Toolkit의 모양·전환을 적는 파일)의 transition(전환)은 값이 바뀔 때 몇 초 동안 부드럽게 바꿀지를 정해요. 전환을 :hover(마우스를 올린 상태)에만 적으면, 올릴 땐 전환이 있지만 마우스를 떼어 기본 모양으로 돌아갈 땐 전환이 없어 툭 돌아가요. 전환을 기본 클래스(.lab-button)에 적어야 두 방향 모두 부드러워요.",
    "labView": "0302_ButtonTransition 씬에서 버튼 3개에 마우스를 올렸다 떼며 A(ButtonTransition_A.uss)와 B(ButtonTransition_B.uss)의 돌아오는 모습을 비교한다. 아래 패널에 지금 끼운 USS 원문이 나온다.",
    "controls": "1 : A · transition 을 :hover 에만 (ButtonTransition_A.uss)\n2 : B · transition 을 기본 클래스에 (ButtonTransition_B.uss)\nTab : A ↔ B 바꾸기\n마우스 : 버튼 위에 올렸다가 떼기",
    "tryThis": [
@@ -438,7 +438,7 @@
    "lab": {
     "scene": "0302_ButtonTransition"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef438128aaa2e704335347b7"
   },
   {
    "id": "0303",
@@ -446,7 +446,7 @@
    "sub": "전/후 비교: UI·2D",
    "term": "픽셀아트 흐림·떨림 (/2d-pixel-perfect)",
    "easy": "도트 그림이 뭉개지고 떨리는 것 막기",
-   "concept": "도트 그림은 한 칸 한 칸이 화면 픽셀에 딱 맞아야 선명해요. 그림 가져오기를 기본값(Bilinear 필터 = 칸 사이 색을 섞음, 압축 = 색이 번짐)으로 두고 PPU(1칸 크기에 들어가는 픽셀 수)가 그림마다 다르면 뭉개져요. 카메라가 소수점 위치로 따라가면 걸을 때 픽셀이 떨려요. Point 필터 · 압축 없음 · PPU 통일 + Pixel Perfect Camera로 막아요.",
+   "concept": "PPU(Pixels Per Unit)는 월드 1유닛을 몇 픽셀로 그릴지 정하는 값이에요. 16x16 타일을 PPU 16으로 두면 타일 한 장이 1유닛이고, 그림마다 PPU가 다르면 크기가 어긋나요. 여기에 그림 가져오기 기본값(Bilinear 필터 = 칸 사이 색을 섞음, 압축 = 색이 번짐)과 소수점 위치로 따라가는 카메라가 겹치면 도트가 뭉개지고 걸을 때 떨려요. Point 필터 · 압축 없음 · PPU 통일 + Pixel Perfect Camera로 막아요.",
    "labView": "0303_PixelPerfect 씬에서 좌우로 걷는 도트 기사와 땅 타일을 A(Bilinear · 압축 · PPU 13 · 보통 카메라)와 B(Point · 압축 없음 · PPU 16 · Pixel Perfect Camera)로 바꿔 본다. 아래 패널에 실제 텍스처 설정 값이 나온다.",
    "controls": "1 : A · Bilinear · 압축 · PPU 13(타일은 16) · Pixel Perfect Camera 끔\n2 : B · Point · 압축 없음 · PPU 16 · Pixel Perfect Camera(URP 2D) 켬\nTab : A ↔ B 바꾸기\n(캐릭터는 저절로 좌우로 걷고 카메라가 따라감)",
    "tryThis": [
@@ -466,7 +466,7 @@
    "lab": {
     "scene": "0303_PixelPerfect"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381bdbbf3edc2ec3264bc"
   },
   {
    "id": "0304",
@@ -494,7 +494,7 @@
    "lab": {
     "scene": "0304_KoreanFont"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381d091b4c42e4092682b"
   },
   {
    "id": "0401",
@@ -522,7 +522,7 @@
    "lab": {
     "scene": "0401_Bloom"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43812f8ce1f71e16804af4"
   },
   {
    "id": "0402",
@@ -530,7 +530,7 @@
    "sub": "전/후 비교: 그래픽·물리·길찾기",
    "term": "빠른 총알이 벽을 뚫음 (/physics-3d-collision)",
    "easy": "너무 빠르면 벽을 건너뛴다 → 연속 충돌",
-   "concept": "물리 엔진은 0.02초(Fixed Timestep)마다 한 번씩 물체 위치를 보고 겹쳤는지 검사해요(Discrete). 총알이 한 번에 벽 두께보다 멀리 가면 벽 앞과 벽 뒤만 보고 벽을 건너뛰어요. Rigidbody의 Collision Detection을 Continuous Dynamic(연속 충돌: 지나온 길 전체를 검사)으로 바꾸면 빨라도 맞아요.",
+   "concept": "물리 엔진은 0.02초(Fixed Timestep)마다 한 번씩 물체 위치를 보고 겹쳤는지 검사해요(Discrete). 총알이 한 번에 벽 두께보다 멀리 가면 벽 앞과 벽 뒤만 보고 벽을 건너뛰어요. Rigidbody(물리 엔진이 이동·충돌을 맡는 부품)의 Collision Detection을 Continuous Dynamic(연속 충돌: 지나온 길 전체를 검사)으로 바꾸면 이 데모의 속도에서는 벽에 맞아요.",
    "labView": "0402_FastBullet 씬에서 Space로 두께 0.1m 벽에 총알을 쏘고, A(Discrete)와 B(Continuous Dynamic)의 '맞음 / 뚫고 지나감' 수를 비교한다. ↑↓로 속도를 바꿔 본다.",
    "controls": "1 : A · Collision Detection = Discrete\n2 : B · Collision Detection = Continuous Dynamic\nTab : A ↔ B 바꾸기 (바꾸면 수를 0부터 다시 셈)\nSpace : 총알 발사\n↑ / ↓ : 총알 속도 바꾸기 (15 · 30 · 60 · 100 · 150 · 250 m/s)",
    "tryThis": [
@@ -538,7 +538,7 @@
     "↓를 여러 번 눌러 15 m/s로 낮춘 뒤 쏘면 A에서도 맞는 것을 본다.",
     "2(B)로 바꿔 250 m/s로 올려도 벽에 빨간 표시가 남으며 맞는 것을 본다."
    ],
-   "check": "아래 패널의 '물리 한 번에 ○ m 이동'이 벽 두께(0.1m)와 총알 크기를 합친 것보다 크면 Discrete는 뚫립니다. Continuous Dynamic은 속도와 관계없이 맞습니다.",
+   "check": "아래 패널의 '물리 한 번에 ○ m 이동'이 벽 두께(0.1m)와 총알 크기를 합친 것보다 크면 Discrete는 뚫립니다. 이 데모 속도(최대 250 m/s)에서는 Continuous Dynamic이 지나온 길을 검사해 벽을 놓치지 않아요. 실제 게임에서는 크기·속도·물리 설정에 따라 확인이 더 필요해요.",
    "vague": "총알이 벽 뚫어, 고쳐줘",
    "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 150 m/s로 나가는 총알(Rigidbody, 반지름 0.15m)이 두께 0.1m 벽을 뚫고 지나가. /unity:physics-3d-collision 으로 원인을 설명하고, Collision Detection을 Continuous Dynamic으로 바꾸는 방법과 레이캐스트로 막는 방법을 비교해 줘.",
    "script": "FastBulletDemo.cs, FastBullet.cs",
@@ -550,7 +550,7 @@
    "lab": {
     "scene": "0402_FastBullet"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43814ca9f4dd422bc484ee"
   },
   {
    "id": "0403",
@@ -578,7 +578,7 @@
    "lab": {
     "scene": "0403_Trigger"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43816f9a3fef61633fcfc1"
   },
   {
    "id": "0404",
@@ -594,7 +594,7 @@
     "2(B)로 바꿔 에이전트가 노란 선을 따라 벽 끝을 돌아 목표로 가는 것을 본다.",
     "B에서 벽 반대편 여러 곳을 클릭해 길이 매번 장애물을 피해 다시 계산되는 것을 본다."
    ],
-   "check": "A의 문구 'Failed to create agent because it is not close enough to the NavMesh'는 Unity가 실제로 콘솔에 남기는 경고를 재현한 것입니다. 하늘색 판이 구운 NavMesh입니다.",
+   "check": "A 아래에 나오는 'Failed to create agent because there is no valid NavMesh'는 Unity 콘솔에 실제로 나오는 경고와 같은 문장을 화면에 옮겨 적은 것입니다(A에서 에이전트를 켤 때 콘솔에도 실제로 남습니다). 하늘색 판이 구운 NavMesh입니다.",
    "vague": "클릭하면 캐릭터 이동하게",
    "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. /unity:initialize-ai-navigation 으로 com.unity.ai.navigation 패키지를 확인하고, 바닥과 장애물을 덮는 NavMeshSurface 를 1개 두어 구운 뒤, 마우스로 클릭한 바닥으로 캐릭터(NavMeshAgent, 속도 5)가 장애물을 피해 가는 스크립트를 만들어 줘.",
    "script": "NavMeshDemo.cs",
@@ -606,7 +606,7 @@
    "lab": {
     "scene": "0404_NavMesh"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381da87a3eb7343436b80"
   },
   {
    "id": "0501",
@@ -634,7 +634,7 @@
    "lab": {
     "scene": "0501_ClassRules"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef438184af13c0fa20e5287d"
   },
   {
    "id": "0502",
@@ -662,7 +662,7 @@
    "lab": {
     "scene": "0501_ClassRules"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381e49c6ccf4030907f13"
   },
   {
    "id": "0503",
@@ -670,7 +670,7 @@
    "sub": "나만의 스킬 만들기",
    "term": "우리 반 규칙 스킬",
    "easy": "같은 요청도 우리 반 규칙대로 나온다",
-   "concept": "같은 요청 'Space를 누르면 점수가 10 오르는 점수판'도, 규칙이 없으면 오래된 튜토리얼처럼 public 필드·숫자 바로 쓰기·OnGUI·Debug.Log가 섞인 코드가 나오기 쉬워요. 규칙 스킬이 있으면 [SerializeField] 숫자, camelCase 이름, 한글 주석, UI Toolkit처럼 우리 반 모양으로 나와요. 이 씬의 두 코드는 모두 실제로 컴파일되고 실행돼요.",
+   "concept": "같은 요청 'Space를 누르면 점수가 10 오르는 점수판'도, 규칙이 없으면 오래된 튜토리얼처럼 public 필드·숫자 바로 쓰기·OnGUI·Debug.Log가 섞인 코드가 나오기 쉬워요. 규칙 스킬이 있으면 [SerializeField](private 숫자를 인스펙터에 꺼내 보이게 하는 표시) 숫자, camelCase 이름, 한글 주석, UI Toolkit처럼 우리 반 모양으로 나와요. 이 씬의 두 코드는 모두 실제로 컴파일되고 실행돼요.",
    "labView": "0501_ClassRules 씬에서 'A 결과 코드'와 'B 결과 코드' 탭을 번갈아 보고, '실행 결과' 탭에서 Space로 두 코드가 실제로 돌아가는 모습(A: OnGUI 글자, B: UI Toolkit 점수판)을 비교한다.",
    "controls": "← / → : 탭 바꾸기 (SKILL.md 보기 · A 결과 코드 · B 결과 코드 · 실행 결과)\n마우스 : 탭 누르기 · 휠로 내용 내리기\n1 / 2 / Tab : A ↔ B (코드 탭과 실행 결과가 그쪽으로 바뀜)\nSpace : (실행 결과 탭) 점수 +10",
    "tryThis": [
@@ -690,7 +690,7 @@
    "lab": {
     "scene": "0501_ClassRules"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381919e0cf6c78cbc889d"
   },
   {
    "id": "0504",
@@ -718,7 +718,7 @@
    "lab": {
     "scene": "0501_ClassRules"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381938c9fe793bdca92c2"
   },
   {
    "id": "0601",
@@ -746,7 +746,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef438146a622c357667e1bc5"
   },
   {
    "id": "0602",
@@ -774,7 +774,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381e59f7ddd621de95910"
   },
   {
    "id": "0603",
@@ -782,7 +782,7 @@
    "sub": "조심할 점",
    "term": "남이 만든 스킬 조심",
    "easy": "scripts는 내 PC에서 실행된다",
-   "concept": "스킬 폴더의 scripts(실행할 코드)는 AI가 내 PC에서 실행할 수 있어요. 그래서 남이 만든 스킬은 받기 전에 SKILL.md와 scripts/를 직접 열어 무엇을 하는지 읽어 봐야 해요. 출처를 아는 곳(예: Unity-Technologies/unity-agent-plugin)에서 받는 것이 안전해요.",
+   "concept": "스킬 폴더의 scripts(실행할 코드)는 AI가 내 PC에서 실행할 수 있어요. 그래서 남이 만든 스킬은 설치 전에 SKILL.md와 scripts/를 직접 열어 무엇을 하는지 읽어 봐야 해요. 출처를 아는 곳(예: Unity-Technologies/unity-agent-plugin)에서 받는 것이 좋지만, 공식 저장소라도 무조건 안전한 것은 아니니 설치 전에 직접 읽어 봐요.",
    "labView": "00_SkillMap 씬에서 스킬 폴더의 scripts/ 칩과 사람(내 PC) 칸이 함께 강조된 것을 본다.",
    "controls": "← / → : 다른 용어 칸으로 옮기기\nSpace : 다음 단계 (0105 · 0201 · 0202 · 0204 는 단계가 여러 개)\n(강의 모드에서는 지금 용어의 칸이 저절로 강조됨)",
    "tryThis": [
@@ -790,7 +790,7 @@
     "이 저장소의 .claude/skills/class-rules 폴더를 열어 scripts/ 가 없는 것을 확인한다.",
     "남에게 받은 스킬이라면 SKILL.md와 scripts/ 안 파일을 먼저 읽는 순서를 정한다."
    ],
-   "check": "스킬은 글처럼 보여도 scripts/ 가 있으면 실행 파일을 함께 가져오는 것입니다.",
+   "check": "스킬은 글처럼 보여도 scripts/ 가 있으면 실행 파일을 함께 가져오는 것입니다. 공식 저장소라도 설치 전에 SKILL.md와 scripts/를 직접 읽어 봅니다.",
    "vague": "이 스킬 깔아줘",
    "prompt": "Unity 6(6000.6.7f1) URP 3D 프로젝트, Claude Code(또는 Codex)에 Unity 플러그인 설치됨. 인터넷에서 받은 스킬 폴더를 .claude/skills/ 에 넣기 전에 검사하고 싶어. SKILL.md와 scripts/ 안 파일을 실행하지 말고 읽기만 해서, 파일 삭제·네트워크 전송·설치 명령 같은 위험한 동작이 있는지 3가지 기준으로 알려줘.",
    "script": "SkillMapView.cs",
@@ -802,7 +802,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef43815da8d0fd76df0c5a30"
   },
   {
    "id": "0604",
@@ -830,7 +830,7 @@
    "lab": {
     "scene": "00_SkillMap"
    },
-   "notion": ""
+   "notion": "https://app.notion.com/408e1e08ef4381028a8cf59a450e68fa"
   }
  ]
 }

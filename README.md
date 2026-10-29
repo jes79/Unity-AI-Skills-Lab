@@ -1,7 +1,8 @@
 # AI 스킬 랩 (Unity-AI-Skills-Lab)
 
-Claude Code · Codex에 **Unity 공식 플러그인**(스킬 + Unity CLI, MCP는 따로)을 연결하면 무엇이 달라지는지
-Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다. 강의 모드(용어 25개 · 분야 6개)가 함께 들어 있습니다.
+Claude Code · Codex에 **Unity 공식 플러그인**을 연결하면 무엇이 달라지는지 Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다.
+Unity 공식 플러그인은 **스킬 묶음**입니다. Unity CLI 프로그램은 따로 설치하고, 에디터 조종에는 CLI · Pipeline 패키지 · 열린 에디터가 추가로 필요합니다(MCP 도 따로).
+강의 모드(용어 25개 · 분야 6개)가 함께 들어 있습니다.
 
 > 비교 씬의 **A · 스킬 없이 흔히 나오는 결과(재현)** / **B · 스킬을 쓴 결과(재현)** 는
 > 흔히 나오는 결과와 스킬을 쓴 결과를 **우리가 직접 재현한 것**입니다. AI가 실제로 만든 결과가 아닙니다.
@@ -10,7 +11,7 @@ Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다. 강의 
 
 | 항목 | 값 |
 |---|---|
-| Unity | **6000.6.7f1** (Unity 6) · URP (PC_RPAsset + 0303 용 URP 2D 렌더러) |
+| Unity | 플러그인 최소 조건: **Unity 6.0 이상** · 이 저장소를 그대로 열려면: **6000.6.7f1 + URP** (PC_RPAsset + 0303 용 URP 2D 렌더러) |
 | 패키지 | URP 17.6 · Input System · UI Toolkit(내장) · uGUI/TextMeshPro · AI Navigation 2.0.16 · 2D Sprite |
 | 한글 글꼴 | Noto Sans KR Regular (`Assets/06_Fonts`, SIL Open Font License — `NotoSansKR - OFL.txt`) |
 | 저장소 | https://github.com/jes79/Unity-AI-Skills-Lab (브랜치 `main`, Unity 프로젝트 = 저장소 루트) |
@@ -27,7 +28,7 @@ Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다. 강의 
 | `0303_PixelPerfect` | 0303 | `/2d-pixel-perfect` | Bilinear · 압축 · PPU 13(타일 16) · 카메라 소수점 추적 | Point · 압축 없음 · PPU 16 · URP 2D Pixel Perfect Camera (240x135) |
 | `0304_KoreanFont` | 0304 | `/optimize-text-mesh-pro` | TMP 기본 글꼴 LiberationSans SDF 만 → 한글 □ | LiberationSans SDF 복사본 + Noto Sans KR 동적 Fallback |
 | `0401_Bloom` | 0401 | `/urp-postprocessing` | Global Volume 에 Bloom 있음, 카메라 Post Processing 꺼짐 | 같은 Volume, 카메라 Post Processing 켬 |
-| `0402_FastBullet` | 0402 | `/physics-3d-collision` | 총알 Rigidbody `Discrete` → 0.1m 벽 뚫음 (Space 발사, ↑↓ 속도) | `ContinuousDynamic` → 맞음 |
+| `0402_FastBullet` | 0402 | `/physics-3d-collision` | 총알 Rigidbody `Discrete` → 0.1m 벽 뚫음 (Space 발사, ↑↓ 속도) | `ContinuousDynamic` → 이 데모 속도(최대 250 m/s)에서는 지나온 길을 검사해 벽을 놓치지 않음 (실제 게임은 크기·속도·물리 설정에 따라 확인 필요) |
 | `0403_Trigger` | 0403 | `/physics-3d-collision` | 플레이어·동전 모두 Collider 만 → `OnTriggerEnter` 0번 | 움직이는 플레이어에 Kinematic Rigidbody → 불림 |
 | `0404_NavMesh` | 0404 | `/initialize-ai-navigation` | 옛 방식 안내만(Static 표시) → NavMesh 없음 → 에이전트 경고 후 멈춤 | NavMeshSurface 로 구운 NavMesh → 클릭한 곳으로 장애물을 돌아감 |
 | `0501_ClassRules` | 0501~0504 | `class-rules` (이 저장소 스킬) | 탭: SKILL.md 보기 · A 결과 코드(`ScoreManagerA.cs`) · B 결과 코드(`ScoreCounterB.cs`) · 실행 결과 (← → 탭, Space 점수) | |
@@ -74,6 +75,8 @@ Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다. 강의 
 
 ## 직접 실습: 플러그인 전/후 같은 요청 해 보기
 
+> **실습 전에:** 새 브랜치(`git switch -c practice`) 또는 복사한 폴더에서 합니다. 원본 `main` 에서는 AI 에게 파일을 바꾸게 하지 않습니다.
+
 1. **플러그인 설치**
    - Claude Code (세션 안): `/plugin marketplace add Unity-Technologies/unity-agent-plugin` → `/plugin install unity@unity-agent-plugin`
      (터미널: `claude plugin install unity@unity-agent-plugin --scope local`, VS Code 확장은 `/plugins`)
@@ -82,7 +85,7 @@ Unity 안에서 눈으로 보는 수업용 예제 프로젝트입니다. 강의 
 2. **플러그인 끄기(전)**
    - Claude Code: `claude plugin disable unity@unity-agent-plugin` (세션 안: `/plugin disable`, 또는 `/plugin` → Installed 탭)
    - Codex: 끄기 대신 `codex plugin remove unity@unity-agent-plugin`
-3. 새 브랜치나 복사본에서 같은 요청을 합니다. 예:
+3. 실습용 브랜치(`practice`)나 복사본에서 같은 요청을 합니다. 예:
    - "이 프로젝트 HUD 옆에 설정 화면 만들어줘" (→ `0301`)
    - "UI Toolkit 버튼에 마우스를 올리면 0.4초 동안 커지게 해줘" (→ `0302`)
    - "총알이 0.1m 벽을 뚫고 지나가, 고쳐줘" (→ `0402`)

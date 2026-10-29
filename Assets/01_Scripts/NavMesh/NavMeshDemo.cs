@@ -13,7 +13,8 @@ using UnityEngine.UIElements;
 // - B: NavMeshSurface 컴포넌트로 구운 NavMesh (씬을 만들 때 구워 둠) → 장애물을 돌아서 감
 public class NavMeshDemo : AbCompareScene
 {
-    const string AgentWarning = "Failed to create agent because it is not close enough to the NavMesh";
+    // NavMesh 가 하나도 없을 때 에이전트를 켜면 Unity 가 콘솔에 남기는 경고 (6000.6.7f1 플레이어 로그에서 확인한 문장)
+    const string AgentWarning = "Failed to create agent because there is no valid NavMesh";
 
     [SerializeField] NavMeshSurface surface;
     [SerializeField] NavMeshAgent agent;
@@ -50,7 +51,7 @@ public class NavMeshDemo : AbCompareScene
         infoLabel.text = useSkill
             ? "NavMeshSurface 컴포넌트(AI Navigation 패키지)로 바닥·장애물을 구웠다 (하늘색 = NavMesh)\n바닥을 클릭하면 장애물을 돌아서 간다"
             : "옛 튜토리얼 안내만 따름: 바닥·장애물에 Static 체크 → 'Navigation 창에서 Bake'\nUnity 6 방식인 NavMeshSurface 가 씬에 없어(꺼져 있어) NavMesh 가 없다";
-        warningLabel.text = agent.isOnNavMesh ? "" : $"[경고] 콘솔 경고 (재현): \"{AgentWarning}\"";
+        warningLabel.text = agent.isOnNavMesh ? "" : $"[경고] Unity 콘솔에 나오는 경고와 같은 문장을 옮겨 적음: \"{AgentWarning}\"";
 
         if (useSkill) MoveTo(demoTarget);
     }
@@ -74,7 +75,7 @@ public class NavMeshDemo : AbCompareScene
     {
         if (!agent.isOnNavMesh)
         {
-            warningLabel.text = $"[경고] 에이전트가 NavMesh 위에 없어 SetDestination 을 할 수 없음 (isOnNavMesh = false)\n콘솔 경고 (재현): \"{AgentWarning}\"";
+            warningLabel.text = $"[경고] 에이전트가 NavMesh 위에 없어 SetDestination 을 할 수 없음 (isOnNavMesh = false)\nUnity 콘솔에 나오는 경고와 같은 문장을 옮겨 적음: \"{AgentWarning}\"";
             return;
         }
         agent.SetDestination(point);
